@@ -29,14 +29,12 @@ describe('env parsing', () => {
       NEXT_PUBLIC_SUPABASE_URL: `${hostedSupabaseProjectUrl}/`,
       NEXT_PUBLIC_SUPABASE_ANON_KEY: 'anon-key',
       NEXT_PUBLIC_APP_URL: 'http://localhost:3000/',
-      MOCKLY_API_URL: 'http://localhost:3000/',
     })
 
     expect(getPublicEnv()).toEqual({
       NEXT_PUBLIC_SUPABASE_URL: hostedSupabaseProjectUrl,
       NEXT_PUBLIC_SUPABASE_ANON_KEY: 'anon-key',
       NEXT_PUBLIC_APP_URL: 'http://localhost:3000',
-      MOCKLY_API_URL: 'http://localhost:3000',
     })
   })
 
@@ -45,7 +43,6 @@ describe('env parsing', () => {
       NEXT_PUBLIC_SUPABASE_URL: hostedSupabaseProjectUrl,
       NEXT_PUBLIC_SUPABASE_ANON_KEY: 'anon-key',
       NEXT_PUBLIC_APP_URL: 'http://localhost:3000',
-      MOCKLY_API_URL: 'http://localhost:3000',
       SUPABASE_SERVICE_ROLE_KEY: undefined,
       SEED_SECRET: undefined,
       ANTHROPIC_API_KEY: undefined,
@@ -54,6 +51,7 @@ describe('env parsing', () => {
     expect(() => getServerEnv()).toThrowErrorMatchingInlineSnapshot(`
       [Error: Invalid server environment configuration for Mockly.
       Populate the required values in .env.local (local development) or your deployment environment before continuing.
+      - MOCKLY_API_URL: Required
       - SUPABASE_SERVICE_ROLE_KEY: Required
       - SEED_SECRET: Required
       - ANTHROPIC_API_KEY: Required]
@@ -65,7 +63,6 @@ describe('env parsing', () => {
       NEXT_PUBLIC_SUPABASE_URL: 'http://127.0.0.1:54321',
       NEXT_PUBLIC_SUPABASE_ANON_KEY: 'anon-key',
       NEXT_PUBLIC_APP_URL: 'http://localhost:3000',
-      MOCKLY_API_URL: 'http://localhost:3000',
     })
 
     expect(isHostedSupabaseUrl(hostedSupabaseProjectUrl)).toBe(true)
