@@ -1,13 +1,46 @@
 import { render, screen } from '@testing-library/react'
 import HomePage from '@/app/page'
 import * as sessionModule from '@/lib/auth/session'
+import * as browseModule from '@/lib/marketplace/browse'
+import type { MarketplaceBrowseItem } from '@/lib/marketplace/browse-state'
 
 vi.mock('@/lib/auth/session', () => ({
   getViewerState: vi.fn(),
 }))
 
+vi.mock('@/lib/marketplace/browse', async () => {
+  const actual = await vi.importActual<typeof import('@/lib/marketplace/browse')>('@/lib/marketplace/browse')
+
+  return {
+    ...actual,
+    getMarketplaceBrowseItems: vi.fn(),
+  }
+})
+
+const browseItems: MarketplaceBrowseItem[] = [
+  {
+    id: '1',
+    slug: 'nextjs-api-guardian',
+    title: 'Next.js API Guardian',
+    summary: 'Route-hardening checks for App Router APIs.',
+    description: 'Security and regression checklist tuned for Next.js backends.',
+    category: 'skill',
+    access_tier: 'free',
+    status: 'published',
+    is_scaffold_only: false,
+    install_command: 'npx mockly@latest install nextjs-api-guardian',
+    tags: ['nextjs', 'api', 'security'],
+    published_at: '2026-03-31T00:00:00.000Z',
+    created_at: '2026-03-30T00:00:00.000Z',
+  },
+]
+
 describe('HomePage', () => {
-  it('renders the logged-out login signal and section cards', async () => {
+  beforeEach(() => {
+    vi.mocked(browseModule.getMarketplaceBrowseItems).mockResolvedValue(browseItems)
+  })
+
+  it('renders the logged-out login signal and marketplace browse surface', async () => {
     vi.mocked(sessionModule.getViewerState).mockResolvedValue({
       isAuthenticated: false,
       email: null,
@@ -21,13 +54,12 @@ describe('HomePage', () => {
 
     expect(
       screen.getByRole('heading', {
-        name: /next\.js 15 baseline for the hosted marketplace and cli mission\./i,
+        name: /discover free mockly assets from the hosted supabase catalog\./i,
       }),
     ).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /sign in with google or github/i })).toBeInTheDocument()
-    expect(screen.getByText(/marketplace web app/i)).toBeInTheDocument()
-    expect(screen.getByText(/cli workspace/i)).toBeInTheDocument()
-    expect(screen.getByText(/supabase project/i)).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /browse installable mockly assets from the hosted catalog\./i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /next\.js api guardian/i })).toBeInTheDocument()
   })
 
   it('renders visible signed-in identity when a session exists', async () => {
