@@ -1,0 +1,38 @@
+{
+  "accountancy": {
+    "Accounting for Partnership Firms": ["partner", "partnership", "capital account", "profit and loss appropriation", "goodwill", "admission", "retired", "died"],
+    "Accounting for Companies": ["shares", "debenture", "securities premium", "forfeited", "reissued", "redemption"],
+    "Financial Statements Analysis": ["balance sheet", "cash flow", "ratio", "comparative", "common size", "inventory turnover", "quick ratio"],
+    "Computerised Accounting": ["excel", "formula tab", "computerised accounting", "account group", "chart"]
+  },
+  "business-studies": {
+    "Nature and Significance of Management": ["management", "coordination", "effectiveness", "efficiency"],
+    "Principles of Management": ["principle", "fayol", "taylor", "division of work", "discipline"],
+    "Business Environment": ["business environment", "liberalisation", "privatisation", "demonetisation"],
+    "Planning and Organising": ["planning", "organising", "delegation", "decentralisation"],
+    "Staffing and Directing": ["staffing", "recruitment", "selection", "training", "motivation", "leadership"],
+    "Marketing Management": ["marketing", "product", "price", "promotion", "place", "advertising"],
+    "Consumer Protection": ["consumer", "rights", "redressal", "complaint"]
+  },
+  "economics": {
+    "National Income": ["national income", "gdp", "real gdp", "nominal gdp", "value added", "circular flow"],
+    "Money and Banking": ["money supply", "central bank", "rbi", "commercial bank", "credit creation"],
+    "Government Budget": ["budget", "fiscal deficit", "revenue deficit", "tax"],
+    "Balance of Payments": ["balance of payments", "foreign exchange", "current account", "bop"],
+    "Demand and Supply": ["demand", "supply", "price elasticity", "curve"],
+    "Indian Economy": ["human capital", "sustainable development", "rural development", "liberalisation"]
+  },
+  "mathematics": {
+    "Matrices and Determinants": ["matrix", "matrices", "determinant", "inverse"],
+    "Calculus": ["differentiate", "integration", "integral", "dy/dx", "continuity", "derivative"],
+    "Probability": ["probability", "random variable", "bayes"],
+    "Linear Programming": ["maximise", "minimise", "constraints", "feasible region", "objective function"],
+    "Vectors and 3D Geometry": ["vector", "plane", "line", "direction cosines"]
+  },
+  "english": {
+    "Reading Comprehension": ["read the following passage", "answer the following questions"],
+    "Writing Skills": ["write a letter", "article", "speech", "report", "notice", "advertisement", "invitation", "bio-data", "resume"],
+    "Grammar": ["gap", "editing", "omission", "rearrange", "fill in"],
+    "Literature": ["flamingo", "vistas", "poem", "extract", "prose"]
+  }
+}

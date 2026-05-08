@@ -1,0 +1,908 @@
+# Human Review Queue
+
+- accountancy-2024-67-1-1-q23-23: Suspected page split with accountancy-2024-67-1-1-q24-24; score 2.
+- accountancy-2024-67-1-2-q23-23: Suspected page split with accountancy-2024-67-1-2-q24-24; score 2.
+- accountancy-2024-67-1-3-q23-23: Suspected page split with accountancy-2024-67-1-3-q24-24; score 2.
+- accountancy-2024-67-2-1-q12-12-or-b: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2024-67-2-1-q13-13: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2024-67-2-1-q21-21: Suspected page split with accountancy-2024-67-2-1-q22-22; score 2.
+- accountancy-2024-67-2-2-q13-13: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2024-67-2-2-q22-22: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2024-67-2-3-q13-13: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2024-67-2-3-q13-13-or-b: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2024-67-2-3-q21-21: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2024-67-3-1-q15-15: Suspected page split with accountancy-2024-67-3-1-q16-16; score 2.
+- accountancy-2024-67-3-1-q16-16-or-b: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2024-67-3-1-q17-17: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q28-36: graph_based has no verified image path.
+- accountancy-2024-67-3-2-q29-37: graph_based has no verified image path.
+- accountancy-2024-67-3-3-q6-6: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2024-67-3-3-q6-6-or-b: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2024-67-3-3-q17-17: Suspected page split with accountancy-2024-67-3-3-q18-18; score 2.
+- accountancy-2024-67-3-3-q30-38: graph_based has no verified image path.
+- accountancy-2025-67-4-1-q15-14-or-b: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2025-67-4-1-q16-15: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2025-67-4-1-q26-28: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2025-67-4-1-q31-34: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q31-41: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q12-11-or-b: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2025-67-4-2-q13-12: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2025-67-4-2-q25-27: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2025-67-4-2-q32-36: Suspected page split with accountancy-2025-67-4-2-q33-44; score 2.
+- accountancy-2025-67-4-2-q32-43: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q13-12-or-b: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2025-67-4-3-q14-13: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2025-67-4-3-q24-25: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2025-67-4-3-q31-34: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q31-41: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q30-45: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q27-39: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q28-31-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q28-39: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q22-23: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2025-67-6-2-q22-23: Suspected page split with accountancy-2025-67-6-2-q23-24; score 2.
+- accountancy-2025-67-7-1-q22-22: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2025-67-7-2-q22-22: CBQ structure detected; sub-question linkage may need human validation.
+- accountancy-2025-67-7-3-q22-22: CBQ structure detected; sub-question linkage may need human validation.
+- business-studies-2025-26-sqp-q4-4: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q20-20: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q2-2: Suspected page split with economics-2025-26-sqp-q3-3; score 2.
+- economics-2025-26-sqp-q3-3: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q17-17: CBQ structure detected; sub-question linkage may need human validation.
+- economics-2025-26-sqp-q23-23: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q30-30-or-b: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q34-34: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q2-2: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q3-3: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q5-5: Suspected page split with accountancy-2024-67-1-1-q6-6; score 2.
+- accountancy-2024-67-1-1-q6-6: Suspected page split with accountancy-2024-67-1-1-q7-7; score 2.
+- accountancy-2024-67-1-1-q9-9: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q10-10: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q11-11: Suspected page split with accountancy-2024-67-1-1-q12-12; score 2.
+- accountancy-2024-67-1-1-q12-12: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q13-13: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q22-22: Suspected page split with accountancy-2024-67-1-1-q23-23; score 2.
+- accountancy-2024-67-1-1-q27-27: Suspected page split with accountancy-2024-67-1-1-q28-28; score 2.
+- accountancy-2024-67-1-1-q28-28: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q30-30: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q30-37: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q32-32: Suspected page split with accountancy-2024-67-1-1-q33-33; score 2.
+- accountancy-2024-67-1-2-q8-8: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q9-9: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q11-11: Suspected page split with accountancy-2024-67-1-2-q17-17; score 2.
+- accountancy-2024-67-1-2-q17-17: Suspected page split with accountancy-2024-67-1-2-q18-18; score 2.
+- accountancy-2024-67-1-2-q22-22: Suspected page split with accountancy-2024-67-1-2-q23-23; score 2.
+- accountancy-2024-67-1-2-q27-27: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q31-31: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q32-32: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q1-1: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q11-11: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q14-14: Suspected page split with accountancy-2024-67-1-3-q17-17; score 2.
+- accountancy-2024-67-1-3-q17-17: Suspected page split with accountancy-2024-67-1-3-q18-18; score 2.
+- accountancy-2024-67-1-3-q18-18: Suspected page split with accountancy-2024-67-1-3-q21-21; score 2.
+- accountancy-2024-67-1-3-q21-21: Suspected page split with accountancy-2024-67-1-3-q23-23; score 2.
+- accountancy-2024-67-2-1-q1-1: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q3-3: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q4-4: Suspected page split with accountancy-2024-67-2-1-q6-6; score 2.
+- accountancy-2024-67-2-1-q10-10: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q12-12: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q15-15: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q19-19: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q27-27: Suspected page split with accountancy-2024-67-2-1-q28-35; score 2.
+- accountancy-2024-67-2-1-q28-35: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q30-30: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q30-37: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q31-31: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q32-32: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q4-4: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q27-27: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q27-35: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q28-28: Suspected page split with accountancy-2024-67-2-2-q29-37; score 2.
+- accountancy-2024-67-2-2-q31-31: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q32-32: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q32-38: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q33-33: Suspected page split with accountancy-2024-67-2-2-q34-40; score 2.
+- accountancy-2024-67-2-3-q28-28: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q31-31: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q32-32: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q32-39: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q2-2: Suspected page split with accountancy-2024-67-3-1-q3-3; score 2.
+- accountancy-2024-67-3-1-q5-5: Suspected page split with accountancy-2024-67-3-1-q6-6; score 2.
+- accountancy-2024-67-3-1-q6-6: Suspected page split with accountancy-2024-67-3-1-q7-7; score 2.
+- accountancy-2024-67-3-1-q9-9: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q10-10: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q11-11: Suspected page split with accountancy-2024-67-3-1-q12-12; score 2.
+- accountancy-2024-67-3-1-q12-12: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q13-13: Suspected page split with accountancy-2024-67-3-1-q15-15; score 2.
+- accountancy-2024-67-3-1-q16-16: Suspected page split with accountancy-2024-67-3-1-q18-18; score 2.
+- accountancy-2024-67-3-1-q27-27: Suspected page split with accountancy-2024-67-3-1-q28-28; score 2.
+- accountancy-2024-67-3-1-q28-28: Suspected page split with accountancy-2024-67-3-1-q30-30; score 2.
+- accountancy-2024-67-3-1-q30-30: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q30-38: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q32-32: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q33-33: Suspected page split with accountancy-2024-67-3-1-q34-34; score 2.
+- accountancy-2024-67-3-2-q6-6: Suspected page split with accountancy-2024-67-3-2-q7-7; score 2.
+- accountancy-2024-67-3-2-q11-11: Suspected page split with accountancy-2024-67-3-2-q15-15; score 2.
+- accountancy-2024-67-3-2-q15-15: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q17-17: Suspected page split with accountancy-2024-67-3-2-q18-18; score 2.
+- accountancy-2024-67-3-2-q19-19: Suspected page split with accountancy-2024-67-3-2-q21-21; score 2.
+- accountancy-2024-67-3-2-q29-29: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q31-31: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q32-32: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q33-33: Suspected page split with accountancy-2024-67-3-2-q34-34; score 2.
+- accountancy-2024-67-3-3-q12-12: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q18-18: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q30-30: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q2-2: Suspected page split with accountancy-2025-26-sqp-q2-25; score 3.
+- accountancy-2025-26-sqp-q3-3: Suspected page split with accountancy-2025-26-sqp-q3-3-or-b; score 3.
+- accountancy-2025-26-sqp-q3-3-or-b: Suspected page split with accountancy-2025-26-sqp-q4-4; score 3.
+- accountancy-2025-26-sqp-q4-4: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q4-4-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q10-10: Suspected page split with accountancy-2025-26-sqp-q10-10-or-b; score 3.
+- accountancy-2025-26-sqp-q10-10-or-b: Suspected page split with accountancy-2025-26-sqp-q11-11; score 3.
+- accountancy-2025-26-sqp-q14-14: Suspected page split with accountancy-2025-26-sqp-q15-15; score 2.
+- accountancy-2025-26-sqp-q27-29: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q29-32-or-b: Suspected page split with accountancy-2025-26-sqp-q31-30; score 3.
+- accountancy-2025-26-sqp-q31-30: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q33-36: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q33-44: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q2-2: Suspected page split with accountancy-2025-67-4-1-q3-3; score 2.
+- accountancy-2025-67-4-1-q5-5: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q6-6: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q7-7: Suspected page split with accountancy-2025-67-4-1-q8-8; score 2.
+- accountancy-2025-67-4-1-q12-11: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q14-13: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q19-18: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q22-21: Suspected page split with accountancy-2025-67-4-1-q23-22; score 2.
+- accountancy-2025-67-4-1-q25-25: Suspected page split with accountancy-2025-67-4-1-q26-28; score 2.
+- accountancy-2025-67-4-1-q26-28-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q27-30: Suspected page split with accountancy-2025-67-4-1-q27-37; score 3.
+- accountancy-2025-67-4-1-q28-38: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q29-32: Suspected page split with accountancy-2025-67-4-1-q30-33; score 2.
+- accountancy-2025-67-4-1-q30-40: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q32-35: Suspected page split with accountancy-2025-67-4-1-q33-36; score 2.
+- accountancy-2025-67-4-2-q1-1: Suspected page split with accountancy-2025-67-4-2-q1-29; score 3.
+- accountancy-2025-67-4-2-q18-17: Suspected page split with accountancy-2025-67-4-2-q19-18; score 2.
+- accountancy-2025-67-4-2-q19-18: Suspected page split with accountancy-2025-67-4-2-q21-20; score 2.
+- accountancy-2025-67-4-2-q21-20: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q23-22: Suspected page split with accountancy-2025-67-4-2-q25-27-or-b; score 3.
+- accountancy-2025-67-4-3-q23-22: Suspected page split with accountancy-2025-67-4-3-q24-25; score 2.
+- accountancy-2025-67-5-1-q1-1: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q4-4: Suspected page split with accountancy-2025-67-5-1-q5-5; score 2.
+- accountancy-2025-67-5-1-q5-5: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q6-6: Suspected page split with accountancy-2025-67-5-1-q8-8; score 2.
+- accountancy-2025-67-5-1-q9-9: Suspected page split with accountancy-2025-67-5-1-q10-10; score 2.
+- accountancy-2025-67-5-1-q10-10: Suspected page split with accountancy-2025-67-5-1-q11-11; score 2.
+- accountancy-2025-67-5-1-q11-11: Suspected page split with accountancy-2025-67-5-1-q12-12; score 2.
+- accountancy-2025-67-5-1-q12-12: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q14-14: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q15-15: Suspected page split with accountancy-2025-67-5-1-q17-17; score 2.
+- accountancy-2025-67-5-1-q17-17: Suspected page split with accountancy-2025-67-5-1-q18-18; score 2.
+- accountancy-2025-67-5-1-q20-20: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q23-23: Suspected page split with accountancy-2025-67-5-1-q23-23-or-b; score 3.
+- accountancy-2025-67-5-1-q23-23-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q24-24: Suspected page split with accountancy-2025-67-5-1-q24-25; score 3.
+- accountancy-2025-67-5-1-q25-27: Suspected page split with accountancy-2025-67-5-1-q26-28; score 2.
+- accountancy-2025-67-5-1-q27-41: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q28-31: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q28-43: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q29-32: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q32-35: Suspected page split with accountancy-2025-67-5-1-q33-48; score 2.
+- accountancy-2025-67-5-2-q7-7: Suspected page split with accountancy-2025-67-5-2-q13-13; score 2.
+- accountancy-2025-67-5-2-q13-13: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q23-23: Suspected page split with accountancy-2025-67-5-2-q23-24-or-b; score 3.
+- accountancy-2025-67-5-2-q23-24-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q24-26: Suspected page split with accountancy-2025-67-5-2-q26-29; score 2.
+- accountancy-2025-67-5-2-q26-29: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q32-36: Suspected page split with accountancy-2025-67-5-2-q32-36-or-b; score 3.
+- accountancy-2025-67-5-3-q25-27: Suspected page split with accountancy-2025-67-5-3-q26-28; score 2.
+- accountancy-2025-67-5-3-q27-30: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q32-35: Suspected page split with accountancy-2025-67-5-3-q32-35-or-b; score 3.
+- accountancy-2025-67-6-1-q1-1: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q2-2: Suspected page split with accountancy-2025-67-6-1-q3-3; score 2.
+- accountancy-2025-67-6-1-q4-4: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q5-6: Suspected page split with accountancy-2025-67-6-1-q7-8; score 2.
+- accountancy-2025-67-6-1-q7-8: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q9-10: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q11-12: Suspected page split with accountancy-2025-67-6-1-q12-13; score 2.
+- accountancy-2025-67-6-1-q15-16: Suspected page split with accountancy-2025-67-6-1-q17-18; score 2.
+- accountancy-2025-67-6-1-q20-21: Suspected page split with accountancy-2025-67-6-1-q21-22; score 2.
+- accountancy-2025-67-6-1-q21-22: Suspected page split with accountancy-2025-67-6-1-q22-23; score 2.
+- accountancy-2025-67-6-1-q23-24: Suspected page split with accountancy-2025-67-6-1-q23-24-or-b; score 3.
+- accountancy-2025-67-6-1-q23-24-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q24-25: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q25-27: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q27-31: Suspected page split with accountancy-2025-67-6-1-q29-32; score 2.
+- accountancy-2025-67-6-1-q29-32: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q30-45: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q31-34: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q32-35: Suspected page split with accountancy-2025-67-6-1-q33-36; score 2.
+- accountancy-2025-67-6-2-q10-10: Suspected page split with accountancy-2025-67-6-2-q16-17; score 2.
+- accountancy-2025-67-6-2-q16-17: Suspected page split with accountancy-2025-67-6-2-q17-18; score 2.
+- accountancy-2025-67-6-2-q21-22: Suspected page split with accountancy-2025-67-6-2-q22-23; score 2.
+- accountancy-2025-67-6-2-q25-27: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q25-28: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q28-32: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q30-33: Suspected page split with accountancy-2025-67-6-2-q31-34; score 2.
+- accountancy-2025-67-6-2-q31-34: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q11-11: Suspected page split with accountancy-2025-67-6-3-q12-12; score 2.
+- accountancy-2025-67-6-3-q12-12: Suspected page split with accountancy-2025-67-6-3-q17-17; score 2.
+- accountancy-2025-67-6-3-q17-17: Suspected page split with accountancy-2025-67-6-3-q21-21; score 2.
+- accountancy-2025-67-6-3-q24-24: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q31-33: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q1-1: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q2-2: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q3-3: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q8-8: Suspected page split with accountancy-2025-67-7-1-q10-10; score 2.
+- accountancy-2025-67-7-1-q11-11: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q12-12: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q14-14: Suspected page split with accountancy-2025-67-7-1-q15-15; score 2.
+- accountancy-2025-67-7-1-q23-23: Suspected page split with accountancy-2025-67-7-1-q23-23-or-b; score 3.
+- accountancy-2025-67-7-1-q23-23-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q24-24: Suspected page split with accountancy-2025-67-7-1-q24-25; score 3.
+- accountancy-2025-67-7-1-q27-30: Suspected page split with accountancy-2025-67-7-1-q27-38; score 3.
+- accountancy-2025-67-7-1-q28-31: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q29-32: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q29-40: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q30-43: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q31-34: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q33-46: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q13-13: Suspected page split with accountancy-2025-67-7-2-q17-17; score 2.
+- accountancy-2025-67-7-2-q25-28: Suspected page split with accountancy-2025-67-7-2-q25-28-or-b; score 3.
+- accountancy-2025-67-7-2-q32-35: Suspected page split with accountancy-2025-67-7-2-q33-49; score 2.
+- accountancy-2025-67-7-3-q2-37: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q2-40: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q27-43: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q29-33: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q32-36: Suspected page split with accountancy-2025-67-7-3-q34-42; score 2.
+- business-studies-2025-26-sqp-q2-2: Suspected page split with business-studies-2025-26-sqp-q3-3; score 2.
+- business-studies-2025-26-sqp-q3-3: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q6-6: Suspected page split with business-studies-2025-26-sqp-q7-7; score 2.
+- business-studies-2025-26-sqp-q7-7: Suspected page split with business-studies-2025-26-sqp-q8-8; score 2.
+- business-studies-2025-26-sqp-q10-10: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q12-12: Suspected page split with business-studies-2025-26-sqp-q13-13; score 2.
+- business-studies-2025-26-sqp-q18-18: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q19-19: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q1-1: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q5-5: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q6-6: Suspected page split with economics-2025-26-sqp-q7-7; score 2.
+- economics-2025-26-sqp-q8-8: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q9-9: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q10-10: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q11-11: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q16-16: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q18-18: Suspected page split with economics-2025-26-sqp-q19-19; score 2.
+- economics-2025-26-sqp-q22-22: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q24-24: Suspected page split with economics-2025-26-sqp-q25-25; score 2.
+- economics-2025-26-sqp-q25-25: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q26-26: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q1-1: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q1-1-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q7-7: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q8-8: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q15-15: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q18-18: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q19-19: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q19-19-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q25-25-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q27-34: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q28-35: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q28-35-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q29-29: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q30-30-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q30-37-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q31-31: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q32-38: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q33-39: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q33-39-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-1-q34-40: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q3-3: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q4-4: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q4-4-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q5-5: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q7-7: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q12-12: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q14-14: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q15-15: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q16-16: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q16-16-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q18-18: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q20-20: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q20-20-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q26-26-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q27-27-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q27-35: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q27-35-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q28-28: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q29-29: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q29-37: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q30-38: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q31-39: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q33-40: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q33-40-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-2-q34-34: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q1-1-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q2-2: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q2-2-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q4-4: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q4-4-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q5-5: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q7-7: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q8-8: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q9-9: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q12-12: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q15-15: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q19-19: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q19-19-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q25-25-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q27-27: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q28-28: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q28-28-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q28-35: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q28-35-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q29-36: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q30-30: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q30-37: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q30-37-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q31-31: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q31-38: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q32-32: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q33-39: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-1-3-q33-39-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q4-4-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q5-5: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q6-6: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q7-7: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q8-8: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q9-9: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q11-11: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q14-14: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q16-16: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q17-17-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q22-22: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q23-23: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q24-24: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q28-28: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q28-35-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q29-29: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q29-36: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q31-38: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q33-33-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q33-39: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q33-39-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q34-34: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-1-q34-40: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q1-1: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q2-2: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q3-3: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q5-5-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q6-6: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q7-7: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q7-7-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q8-8: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q9-9: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q10-10: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q11-11: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q14-14: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q15-15: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q16-16: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q17-17: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q17-17-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q21-21: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q23-23: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q28-36: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q29-29: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q29-37: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q29-37-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q30-30: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q33-33-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q33-39: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q33-39-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q34-34: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-2-q34-40: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q1-1: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q2-2: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q3-3: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q4-4: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q4-4-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q5-5: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q6-6: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q7-7: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q8-8: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q9-9: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q10-10: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q12-12: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q14-14: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q15-15: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q16-16: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q17-17-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q19-19: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q19-19-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q20-20: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q22-22: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q23-23: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q27-27: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q27-35: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q28-36: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q29-29: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q29-37: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q30-38: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q30-38-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q33-33-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q33-40: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q33-40-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q34-34: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-2-3-q34-41: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q1-1: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q1-1-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q3-3: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q7-7: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q8-8: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q14-14: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q15-15-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q19-19: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q20-20-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q21-21: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q24-24: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q27-35: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q29-29-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q29-37: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q30-30-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q30-38-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q31-31: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q31-39: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q32-40: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q33-33-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q33-41: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q33-41-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-1-q34-34: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q1-1: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q4-4: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q5-5: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q7-7: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q8-8: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q10-10: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q10-10-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q11-11-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q12-12: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q12-12-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q13-13: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q18-18: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q19-19-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q20-20: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q20-20-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q22-22: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q23-23: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q26-26-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q27-27: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q27-27-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q27-35: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q28-28-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q28-36: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q30-38: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q33-33-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q33-39: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q33-39-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-2-q34-34: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q1-1: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q2-2: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q3-3: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q5-5: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q7-7: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q8-8: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q9-9-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q10-10: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q10-10-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q14-14: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q15-15: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q19-19: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q20-20-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q21-21: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q25-25-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q27-27-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q27-35: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q28-28: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q28-28-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q28-36: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q29-37: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q31-31: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q31-39: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q32-32: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q33-33-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q33-40: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q33-40-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2024-67-3-3-q34-34: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q1-24: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q5-5: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q9-9: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q13-13: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q16-16: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q20-20: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q27-38: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q28-31: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q28-39: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q29-32: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q29-40: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q30-41: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q31-42: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q32-35: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q32-43: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q33-36-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q33-44-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-26-sqp-q34-45: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q1-24: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q3-3: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q4-4: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q10-9: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q11-10: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q13-12-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q21-20: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q24-23: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q26-27: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q28-31: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q29-39: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q30-33: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q30-33-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q30-40-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q32-42: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q33-36: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q33-36-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q33-43: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q33-43-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-1-q34-44: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q1-29: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q3-3: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q4-4: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q7-6: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q9-8: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q10-9: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q11-10: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q14-13: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q15-14-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q16-15: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q20-19: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q20-19-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q25-26: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q26-28: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q27-31: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q27-31-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q27-38: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q28-39: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q29-33: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q29-40: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q31-35: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q31-42: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q33-37: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q33-37-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q33-44: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-2-q33-44-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q1-27: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q6-5: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q7-6: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q8-7: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q9-8: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q10-9: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q11-10: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q12-11: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q15-14: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q19-18: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q21-20: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q24-24: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q25-26: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q27-37: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q28-31: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q28-31-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q29-39: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q29-39-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q30-33: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q30-40: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q32-42: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q33-36: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q33-36-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q33-43: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-4-3-q33-43-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q3-3: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q3-37: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q7-7: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q13-13: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q16-16: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q19-19: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q19-19-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q22-22: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q25-26: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q26-28: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q26-29: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q27-30: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q27-30-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q27-42: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q27-42-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q29-32-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q29-44: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q30-33: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q31-34: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q31-46: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q32-47: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q33-48-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q34-40: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-1-q34-49: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q2-2: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q3-3: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q4-4: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q9-9: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q11-11: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q15-15: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q16-16: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q18-18: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q18-18-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q20-20: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q22-22: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q26-30: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q27-31: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q28-32: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q28-32-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q28-40: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q29-33: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q29-41: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q30-34: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q30-34-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q30-42: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q30-42-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q31-35: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q31-43: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q32-36-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q32-44: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q33-45-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q34-38: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-2-q34-46: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q3-3: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q4-4: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q5-5: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q7-7: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q9-9: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q11-11: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q13-13: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q16-16: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q19-19: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q19-19-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q20-20: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q22-22: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q23-23-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q26-28: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q26-29: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q27-38: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q27-38-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q28-31: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q29-32: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q29-32-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q29-40: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q29-40-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q30-33: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q30-41: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q31-34: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q31-42: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q32-35-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q32-43: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q33-44-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q34-37: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-5-3-q34-45: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q1-39: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q2-40: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q3-3: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q3-38: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q4-4-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q5-5: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q8-9-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q12-13: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q16-17: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q19-20: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q19-20-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q25-28: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q26-29: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q26-30: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q27-31-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q27-41: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q27-42: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q27-42-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q28-43: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q29-32-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q29-44: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q32-46: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q33-36: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q33-36-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q33-47: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q33-47-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q34-37: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-1-q34-48: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q1-1: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q1-39: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q2-2: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q2-40: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q3-38: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q6-6: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q9-9: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q10-10-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q11-11: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q13-13: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q14-15: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q14-15-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q15-16: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q20-21: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q20-21-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q23-24: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q24-26-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q26-29: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q27-41: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q28-32-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q28-42: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q28-42-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q29-43: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q30-33-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q30-44: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q30-44-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q31-45: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q33-36: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q33-36-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q33-46: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q33-46-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q34-37: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-2-q34-47: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q1-1: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q1-38: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q2-2: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q2-39: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q3-37: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q4-4: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q8-8: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q13-13: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q14-14: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q16-16: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q20-20: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q20-20-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q24-25: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q27-40: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q27-41: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q28-42: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q29-31-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q29-43: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q29-43-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q30-32: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q30-32-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q30-44: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q32-45: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q33-35: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q33-35-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q33-46: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q33-46-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q34-36: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-6-3-q34-47: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q5-5-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q7-7: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q7-7-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q8-8-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q9-9: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q16-16: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q17-17: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q19-19: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q21-21: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q27-38: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q27-39: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q27-39-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q28-41: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q29-32-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q29-42: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q29-42-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q30-33: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q31-44: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q32-45: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q34-37: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-1-q34-47: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q1-1: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q1-1-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q1-38: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q2-2-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q2-36: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q2-39: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q3-37: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q4-4: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q5-5: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q8-8: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q9-9: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q10-10: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q11-11: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q12-12: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q15-15-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q17-17: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q18-18: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q18-18-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q21-21: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q25-27: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q27-30: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q27-43: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q28-31: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q28-31-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q28-42: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q28-44: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q28-44-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q29-45: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q30-33: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q30-46: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q30-46-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q31-34: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q31-47: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q32-48: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q33-49: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-2-q34-41: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q1-1: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q1-39: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q3-38: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q4-4: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q5-5: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q7-7-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q8-8: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q8-8-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q9-9: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q11-11-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q14-14: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q15-15: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q16-16: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q17-17: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q19-19: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q21-21: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q23-23: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q26-29: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q26-30: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q27-31: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q27-31-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q27-44: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q27-44-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q28-45: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q29-46: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q29-46-or-b: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q30-34: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q30-47: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q31-35: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q31-48: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q32-49: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q33-50: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q34-42: Chapter classification is generic and should be reviewed.
+- accountancy-2025-67-7-3-q34-51: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q1-1: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q5-5: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q8-8: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q9-9: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q11-11: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q14-14: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q16-16: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q17-17: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q21-21: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q21-21-or-b: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q22-22: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q23-23: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q23-23-or-b: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q24-24: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q25-25-or-b: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q26-26: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q28-28: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q29-29: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q30-30: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q31-31: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q32-32: Chapter classification is generic and should be reviewed.
+- business-studies-2025-26-sqp-q33-33: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q4-4: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q7-7: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q12-12: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q12-12-or-b: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q13-13: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q13-13-or-b: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q15-15: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q19-19: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q20-20: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q21-21: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q27-27: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q28-28: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q29-29: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q30-30: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q31-31: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q32-32: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q33-33: Chapter classification is generic and should be reviewed.
+- economics-2025-26-sqp-q33-33-or-b: Chapter classification is generic and should be reviewed.

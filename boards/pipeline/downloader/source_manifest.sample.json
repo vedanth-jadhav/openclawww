@@ -1,0 +1,26 @@
+{
+  "generatedAt": "sample",
+  "reviewRequired": true,
+  "sources": [
+    {
+      "subject": "accountancy",
+      "year": 2024,
+      "paperType": "board-paper",
+      "language": "english",
+      "sourceUrl": "https://www.cbse.gov.in/",
+      "expectedFileName": "accountancy-2024-set1.pdf",
+      "trustLevel": "official",
+      "status": "sample-review-needed"
+    },
+    {
+      "subject": "maths",
+      "year": 2024,
+      "paperType": "marking-scheme",
+      "language": "english",
+      "sourceUrl": "https://www.cbse.gov.in/",
+      "expectedFileName": "maths-2024-marking-scheme-set1.pdf",
+      "trustLevel": "official",
+      "status": "sample-review-needed"
+    }
+  ]
+}

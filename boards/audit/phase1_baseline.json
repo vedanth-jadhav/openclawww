@@ -1,0 +1,13 @@
+{
+  "totalQuestions": 1033,
+  "papers": 24,
+  "marksNulls": 0,
+  "unclassified": 1033,
+  "questionTypeCounts": {
+    "mcq": 561,
+    "numerical": 219,
+    "short-answer": 159,
+    "long-answer": 94
+  },
+  "source": "Captured from read-only Phase 1 sqlite queries before repair scripts were run."
+}
