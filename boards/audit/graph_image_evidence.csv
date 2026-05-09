@@ -1,0 +1,16 @@
+id,question_type,has_image,image_path,exists_on_disk,render_hint
+accountancy-2024-67-3-1-q28-36,graph_based,0,,false,image_missing
+accountancy-2024-67-3-2-q29-37,graph_based,0,,false,image_missing
+accountancy-2024-67-3-3-q30-38,graph_based,0,,false,image_missing
+accountancy-2025-67-4-1-q31-34,graph_based,0,,false,image_missing
+accountancy-2025-67-4-1-q31-41,graph_based,0,,false,image_missing
+accountancy-2025-67-4-2-q32-36,graph_based,0,,false,image_missing
+accountancy-2025-67-4-2-q32-43,graph_based,0,,false,image_missing
+accountancy-2025-67-4-3-q31-34,graph_based,0,,false,image_missing
+accountancy-2025-67-4-3-q31-41,graph_based,0,,false,image_missing
+accountancy-2025-67-5-1-q30-45,graph_based,0,,false,image_missing
+accountancy-2025-67-5-2-q27-39,graph_based,0,,false,image_missing
+accountancy-2025-67-5-3-q28-31-or-b,graph_based,0,,false,image_missing
+accountancy-2025-67-5-3-q28-39,graph_based,0,,false,image_missing
+economics-2025-26-sqp-q3-3,diagram_mcq,0,,false,diagram_mcq_image_missing
+economics-2025-26-sqp-q8-8,graph_based,1,/extracted-assets/economics-2025-26-sqp-q8-figure-1.png,true,suspected_page_split

@@ -36,6 +36,12 @@ Done means the repo has real, checkable deliverables:
 - [x] Start `bun run dev` and verify it starts cleanly.
 - [x] Perform render spot-check and update `audit/render_issues.md`.
 - [x] Produce final completion mapping from requirements to evidence.
+- [x] Spawned GPT-5.4-mini subagents for Browser/UI sweep, mission evidence audit, and frontend render review.
+- [x] Fixed Browser-visible duplicate option rendering and practice option keys.
+- [x] Added empty-state handling for no-result Browse searches.
+- [x] Hid review-needed/render-hint rows from default Browse/Trends so visibly degraded extraction does not appear as normal practice content.
+- [x] Added row-level evidence artifacts for cross-source duplicates, graph/image checks, OCR candidates, and page-split merges.
+- [x] Added runtime trigger enforcement for `or_position IN ('A','B',NULL)`.
 
 ## Evidence Log
 
@@ -65,6 +71,12 @@ Done means the repo has real, checkable deliverables:
   - Added `audit/phase1_baseline.json`.
   - `audit/phase1_findings.md` now records original Phase 1 baseline (`1033` total, `1033` unclassified) and the current repaired snapshot.
   - `audit/FINAL_REPORT.md` now reports `Total questions at start: 1033`.
+- Browser/subagent follow-up fixed:
+  - Browse default no longer renders review-hint rows or repeated structured options.
+  - Empty search `zzzzzzzzzz` now shows `No matching questions. Clear the search or loosen the filters.`
+  - Trends and marks panels now use canonical clean active rows.
+  - `audit/cross_source_duplicate_pairs.csv`, `audit/graph_image_evidence.csv`, and `audit/page_split_merges.csv` provide row-level evidence.
+  - Latest verification passed: `bunx tsc --noEmit`, `bun run build`, `python3 audit/verify_artefacts.py`, `python3 pipeline/repair/detect_page_splits.py --mode=verify`, Browser Browse/empty-state check.
 
 ## Completion Evidence Map
 

@@ -1,9 +1,11 @@
 # Deduplication Report
 
-- Exact duplicate groups: 259
+- Exact duplicate groups: 255
 - Same-source rows marked duplicate: 4
-- Cross-source duplicate rows flagged: 671
-- Near-duplicate candidate pairs sampled: 17
+- Cross-source duplicate rows retained as set variants: 406
+- Cross-source duplicate rows flagged: 663
+- Near-duplicate candidate pairs sampled: 12
+- Row-level cross-source evidence: audit/cross_source_duplicate_pairs.csv
 
 ## Samples
 - dupe-1: accountancy-2024-67-1-1-q2-2, accountancy-2024-67-1-2-q5-5, accountancy-2024-67-1-3-q9-9 :: abhay boris and chetan were partners in a firm sharing profits in the ratio of 5 3 2 boris was guaranteed a profit of 95 000 any deficiency on account of this w

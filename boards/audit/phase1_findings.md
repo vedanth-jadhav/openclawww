@@ -21,15 +21,15 @@
 - Chapter = Needs classification: 0
 
 ## Count by Type
-- numerical_accountancy: 534
-- mcq: 376
+- numerical_accountancy: 537
+- mcq: 371
 - short_answer: 104
 - fill_in_blank: 100
 - numerical: 43
 - cbq: 38
 - assertion_reason: 37
+- statement_based_mcq: 30
 - long_answer: 29
-- statement_based_mcq: 28
 - scenario_based: 21
 - graph_based: 14
 - analytical: 8

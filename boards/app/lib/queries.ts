@@ -18,6 +18,12 @@ export type QuestionRow = {
   firstYear: number | null;
   lastYear: number | null;
   needsReview: number;
+  options: string | null;
+  renderHint: string | null;
+  questionData: string | null;
+  tableData: string | null;
+  imagePath: string | null;
+  imageAltText: string | null;
   officialSolution: string | null;
   aiSolution: string | null;
 };
@@ -40,6 +46,12 @@ const baseQuestionSql = `
     qc.first_year AS firstYear,
     qc.last_year AS lastYear,
     q.needs_review AS needsReview,
+    q.options,
+    q.render_hint AS renderHint,
+    q.question_data AS questionData,
+    q.table_data AS tableData,
+    q.image_path AS imagePath,
+    q.image_alt_text AS imageAltText,
     MAX(CASE WHEN sol.source = 'official' THEN sol.content_markdown END) AS officialSolution,
     MAX(CASE WHEN sol.source = 'ai_draft' THEN sol.content_markdown END) AS aiSolution
   FROM questions q
@@ -59,6 +71,10 @@ export function listQuestions(searchParams: URLSearchParams) {
   const values: unknown[] = [];
 
   filters.push("COALESCE(q.status, 'active') = 'active'");
+  if (searchParams.get("review") !== "include") {
+    filters.push("COALESCE(q.needs_review, 0) = 0");
+    filters.push("q.render_hint IS NULL");
+  }
 
   if (subject && subject !== "all") {
     filters.push("q.subject_id = ?");
@@ -111,11 +127,22 @@ export function getTrends() {
   const totals = sqlite
     .prepare(
       `SELECT
-         COUNT(*) AS questions,
-         COALESCE(SUM(repeat_count), 0) AS weightedRepeats,
+         (SELECT COUNT(*) FROM questions WHERE COALESCE(status, 'active') = 'active' AND COALESCE(needs_review, 0) = 0 AND render_hint IS NULL) AS questions,
+         (SELECT COALESCE(SUM(COALESCE(qc.repeat_count, 1)), 0)
+            FROM questions q
+           LEFT JOIN question_clusters qc ON qc.id = q.cluster_id
+           WHERE COALESCE(q.status, 'active') = 'active'
+             AND COALESCE(q.needs_review, 0) = 0
+             AND q.render_hint IS NULL) AS weightedRepeats,
          (SELECT COUNT(*) FROM papers) AS papers,
-         (SELECT COUNT(*) FROM question_clusters WHERE repeat_count > 1) AS repeatedClusters
-       FROM question_clusters`
+         (SELECT COUNT(DISTINCT q.cluster_id)
+            FROM questions q
+            LEFT JOIN question_clusters qc ON qc.id = q.cluster_id
+           WHERE q.cluster_id IS NOT NULL
+             AND COALESCE(q.status, 'active') = 'active'
+             AND COALESCE(q.needs_review, 0) = 0
+             AND q.render_hint IS NULL
+             AND COALESCE(qc.repeat_count, 1) > 1) AS repeatedClusters`
     )
     .get();
   const chapters = sqlite
@@ -126,16 +153,25 @@ export function getTrends() {
        JOIN chapters c ON c.id = q.chapter_id
        LEFT JOIN question_clusters qc ON qc.id = q.cluster_id
        WHERE COALESCE(q.status, 'active') = 'active'
+         AND COALESCE(q.needs_review, 0) = 0
+         AND q.render_hint IS NULL
        GROUP BY c.id
        ORDER BY appearances DESC`
     )
     .all();
   const topClusters = sqlite
     .prepare(
-      `SELECT id, canonical_text AS canonicalText, repeat_count AS repeatCount, first_year AS firstYear, last_year AS lastYear, confidence
-       FROM question_clusters
-       WHERE repeat_count > 1
-       ORDER BY repeat_count DESC, confidence DESC
+      `SELECT qc.id, qc.canonical_text AS canonicalText, qc.repeat_count AS repeatCount, qc.first_year AS firstYear, qc.last_year AS lastYear, qc.confidence
+       FROM question_clusters qc
+       WHERE qc.repeat_count > 1
+         AND EXISTS (
+           SELECT 1 FROM questions q
+           WHERE q.cluster_id = qc.id
+             AND COALESCE(q.status, 'active') = 'active'
+             AND COALESCE(q.needs_review, 0) = 0
+             AND q.render_hint IS NULL
+         )
+       ORDER BY qc.repeat_count DESC, qc.confidence DESC
        LIMIT 10`
     )
     .all();
@@ -159,6 +195,8 @@ export function getMarksBreakdown() {
       `SELECT marks, COUNT(*) AS questions
        FROM questions
        WHERE COALESCE(status, 'active') = 'active'
+         AND COALESCE(needs_review, 0) = 0
+         AND render_hint IS NULL
        GROUP BY marks
        ORDER BY marks`
     )

@@ -1,3 +1,2 @@
 score_4_plus_unmerged=0
-page_split_candidates=237
-auto_merged=0
+page_split_candidates=189

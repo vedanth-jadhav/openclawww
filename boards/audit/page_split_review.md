@@ -519,7 +519,7 @@ ratio of 3 : 2 : 1. With effect from 1st April, 2023, they decided to
 share profits and losses in the future in the ratio of 1 : 2 : 3. There
 existed a Debit Balance of < 60,000 in Profit and Loss
 
-## accountancy-2024-67-1-2-q9-9 + accountancy-2024-67-1-2-q11-11 (score 2)
+## accountancy-2024-67-1-2-q9-9 + accountancy-2024-67-1-2-q10-10 (score 2)
 
 A:
 (a) Dan, Elf and Furhan were partners in a firm sharing profits in the
@@ -547,40 +547,49 @@ share profits and losses in the future in the ratio of 1 : 2 : 3. There
 existed a Debit Balance of < 60,000 in Profit and Loss
 
 B:
-(a) Anju, Divya and Bobby were partners in a firm sharing profits and
-losses in the ratio of 3 : 2 : 1. Bobby retired. The new profit sharing
-: 3.
-The gaining ratio of remaining partners will be:
-(A) 3 : 2 (B) 5:
-(C) 3 : 1 (D) 2 : 3 (b) Mita, Veena and Atul were partners in a firm sharing profits and
-losses in the ratio of 3 : 2 : 1. Atul retired and his share was taken
-over by Mita and Veena in the ratio of 1 : 4. The new profit sharing
-(A) 3 : 2 (B) 8 : 7
-(C) 7 : 3 (D) 2 : 3
-A. 3 : 2
-B. 8 : 7
-C. 7 : 3
-D. 2 : 3
-A. 3 : 2
-B. 8 : 7
-C. 7 : 3
-D. 2 : 3
-A. 3 : 2
-B. 8 : 7
-C. 7 : 3
-D. 2 : 3
-A. 3 : 2
-B. 8 : 7
-C. 7 : 3
-D. 2 : 3
-A. 3 : 2
-B. 8 : 7
-C. 7 : 3
-D. 2 : 3
-A. 3 : 2
-B. 8 : 7
-C. 7 : 3
-D. 2 : 3
+(a) A share of < 100 on which < 80 is received is forfeited for
+non-payment of final call of < 20. The minimum price at which
+this share can be reissued is:
+(A) < 120 (B) < 100
+(C) < 80 (D) < 20 (b) Shiv Ltd. forfeited 500 shares of < 10 each on which < 7 per share
+was paid. These shares were reissued for < 9 per share fully paid.
+Amount transferred to Capital Reserve Account will be:
+(A) < 3,000 (B) < 5,000
+(C) < 4,500 (D) < 3,500
+A. < 3,000
+B. < 5,000
+C. < 4,500
+D. < 3,500
+A. < 3,000
+B. < 5,000
+C. < 4,500
+D. < 3,500
+A. < 3,000
+B. < 5,000
+C. < 4,500
+D. < 3,500
+A. < 3,000
+B. < 5,000
+C. < 4,500
+D. < 3,500
+A. < 3,000
+B. < 5,000
+C. < 4,500
+D. < 3,500
+A. < 3,000
+B. < 5,000
+C. < 4,500
+D. < 3,500
+A. < 3,000
+B. < 5,000
+C. < 4,500
+D. < 3,500
+A. < 3,000
+B. < 5,000
+C. < 4,500
+D. < 3,500
+A. < 3,000
+B
 
 ## accountancy-2024-67-1-2-q11-11 + accountancy-2024-67-1-2-q17-17 (score 2)
 
@@ -619,6 +628,18 @@ A. 3 : 2
 B. 8 : 7
 C. 7 : 3
 D. 2 : 3
+A. 3 : 2
+B. 8 : 7
+C. 7 : 3
+D. 2 : 3
+A. 3 : 2
+B. 8 : 7
+C. 7 : 3
+D. 2 : 3
+A. 3 : 2
+B. 8 : 7
+C. 7 : 3
+D. 
 
 B:
 Akshay, Baljeet and Cizan were partners in a firm sharing profits and
@@ -856,7 +877,7 @@ of Profit and Loss for the year ended 31st March, 2022 and 2023 : 4
 Note 2022 23 2021 22
 Part
 
-## accountancy-2024-67-1-3-q1-1 + accountancy-2024-67-1-3-q6-6 (score 2)
+## accountancy-2024-67-1-3-q1-1 + accountancy-2024-67-1-3-q4-4 (score 2)
 
 A:
 (a) Dan, Elf and Furhan were partners in a firm sharing profits in the
@@ -887,57 +908,37 @@ share profits and losses in the future in the ratio of 1 : 2 : 3. There
 existed a Debit Balance of < 60,000 in Profit and Loss Acc
 
 B:
-Assertion
-A. is correct, but Reason (R) is incorrect. Read the following hypothetical situation and answer questions No. 7 and 8 on the basis of the given information. Abha and Babita were partners in a clay toy making firm sharing profits in the ratio of 2 : 1. On 1st April, 2023, their capital accounts showed balances of < 5,00,000 and < 10,00,000 respectively. The partnership deed provides for interest on capital @ 10% p.a. The firm earned a profit of < 90,000 during the year.
-B. Both Assertion
-C. Assertion
-D. Assertion
-
-## accountancy-2024-67-1-3-q11-11 + accountancy-2024-67-1-3-q14-14 (score 2)
-
-A:
-Assertion
-A. is incorrect, but Reason (R) is correct.
-B. Both Assertion
-C. Assertion
-D. Assertion
-
-B:
-(a) Anju, Divya and Bobby were partners in a firm sharing profits and
-losses in the ratio of 3 : 2 : 1. Bobby retired. The new profit sharing
-: 3.
-The gaining ratio of remaining partners will be:
-(A) 3 : 2 (B) 5:
-(C) 3 : 1 (D) 2 : 3 (b) Mita, Veena and Atul were partners in a firm sharing profits and
-losses in the ratio of 3 : 2 : 1. Atul retired and his share was taken
-over by Mita and Veena in the ratio of 1 : 4. The new profit sharing
-ratio between
-(A) 3 : 2 (B) 8 : 7
-(C) 7 : 3 (D) 2 : 3
-A. 3 : 2
-B. 8 : 7
-C. 7 : 3
-D. 2 : 3
-A. 3 : 2
-B. 8 : 7
-C. 7 : 3
-D. 2 : 3
-A. 3 : 2
-B. 8 : 7
-C. 7 : 3
-D. 2 : 3
-A. 3 : 2
-B. 8 : 7
-C. 7 : 3
-D. 2 : 3
-A. 3 : 2
-B. 8 : 7
-C. 7 : 3
-D. 2 : 3
-A. 3 : 2
-B. 8 : 7
-C. 7 : 3
-D. 2 : 3
+(a) Atul, Beena and Sita were partners in a firm sharing profits and
+losses in the ratio of 8 : 7 : 5. Damini was admitted as a new
+th
+partner for share in the profits which she acquired entirely
+will be:
+(A) 7 : 7 : 5 : 1 (B) 4 : 7 : 5:
+(C) 8 : 7 : 5 : 4 (D) 7 : 5 : 8 : 4 (b) Rushil and Abheer were partners in a firm sharing profits and
+losses in the ratio of 4 : 3. They admitted Sunil as a new partner
+3 2
+th th
+for share in the profits of firm, which he acquired share
+7 7
+th
+from Rushil and share from Abheer. The new profit sharing
+ratio of Rushil, Abheer and Sunil will be:
+(A) 4 : 3 : 3 (B) 2 : 1:
+(C) 2 : 2 : 3 (D) 4 : 3 : 1
+A. 4 : 3 : 3
+B. 2 : 1:
+C. 2 : 2 : 3
+D. 4 : 3 : 1
+A. 4 : 3 : 3
+B. 2 : 1:
+C. 2 : 2 : 3
+D. 4 : 3 : 1
+A. 4 : 3 : 3
+B. 2 : 1:
+C. 2 : 2 : 3
+D. 4 : 3 : 1
+A. 4 : 3 : 3
+B. 2
 
 ## accountancy-2024-67-1-3-q14-14 + accountancy-2024-67-1-3-q17-17 (score 2)
 
@@ -977,6 +978,16 @@ A. 3 : 2
 B. 8 : 7
 C. 7 : 3
 D. 2 : 3
+A. 3 : 2
+B. 8 : 7
+C. 7 : 3
+D. 2 : 3
+A. 3 : 2
+B. 8 : 7
+C. 7 : 3
+D. 2 : 3
+A. 3 : 2
+B. 8 : 
 
 B:
 Anmol, Badal and Cheenu were partners in a firm sharing profits and
@@ -1110,6 +1121,51 @@ company had a balance of < 70,000 in Securities Premium Account.
 Premium Account at the end of first year itself.
 (b)
 ended 31st March, 2023. 6
+
+## accountancy-2024-67-1-3-q28-28 + accountancy-2024-67-1-3-q30-30 (score 2)
+
+A:
+(a)
+of < 5,00,00,000
+(A) Cash inflow of < 5,00,00,000 from financing activities
+(B) Cash outflow of < 5,00,00,000 from financing activities
+(C) Cash outflow of < 5,00,00,000 from investing activities
+(D) No flow of cash (b)
+classified under which of the following:
+(A) Operating Activities
+(B) Investing Activities
+(C) Financing Activities
+(D) Cash and Cash Equivalents
+A. Operating Activities
+B. Investing Activities
+C. Financing Activities
+D. Cash and Cash Equivalents
+A. Operating Activities
+B. Investing Activities
+C. Financing Activities
+D. Cash and Cash Equivalents
+A. Operating Activities
+B. Investing Activities
+C. Financing Activities
+D. Cash and Cash Equivalents
+A. Operating Activities
+B. Investing Activities
+C. Financing Activities
+D. Cash and Cash Equivalents
+A. Operating Activities
+B.
+
+B:
+Identify which of the following transactions will re
+(A) Payment to creditors
+(B) Interest received by a non-finance company
+(C) Dividend received by a non-finance company
+(D) Amount received from debtors (a) Name the Accounting Information sub-system which deals with
+receipt and payment of cash and electronic funds transfer:
+(A) Sales and Accounts Receivable sub-system
+(B) Purchase and Accounts Payable sub-system
+(C) Cash and Bank sub-system
+(D) Costing sub-system
 
 ## accountancy-2024-67-2-1-q1-1 + accountancy-2024-67-2-1-q3-3 (score 2)
 
@@ -1972,6 +2028,16 @@ A. 2 : 1
 B. 1:
 C. 5 : 4
 D. 4 : 5
+A. 2 : 1
+B. 1:
+C. 5 : 4
+D. 4 : 5
+A. 2 : 1
+B. 1:
+C. 5 : 4
+D. 4 : 5
+A. 2 : 1
+B. 1:
 
 ## accountancy-2024-67-3-1-q16-16 + accountancy-2024-67-3-1-q18-18 (score 2)
 
@@ -2013,6 +2079,16 @@ A. 2 : 1
 B. 1:
 C. 5 : 4
 D. 4 : 5
+A. 2 : 1
+B. 1:
+C. 5 : 4
+D. 4 : 5
+A. 2 : 1
+B. 1:
+C. 5 : 4
+D. 4 : 5
+A. 2 : 1
+B. 1:
 
 B:
 Rishi and Suman were partners in a firm. Their capitals were : Rishi
@@ -2149,6 +2225,15 @@ A. Basic Value
 B. Vertical Vector
 C. Derived Value
 D. Horizontal Vector
+A. Basic Value
+B. Vertical Vector
+C. Derived Value
+D. Horizontal Vector
+A. Basic Value
+B. Vertical Vector
+C. Derived Value
+D. Horizontal Vector
+A. Basic Valu
 
 ## accountancy-2024-67-3-1-q30-38 + accountancy-2024-67-3-1-q32-32 (score 2)
 
@@ -2184,6 +2269,15 @@ A. Basic Value
 B. Vertical Vector
 C. Derived Value
 D. Horizontal Vector
+A. Basic Value
+B. Vertical Vector
+C. Derived Value
+D. Horizontal Vector
+A. Basic Value
+B. Vertical Vector
+C. Derived Value
+D. Horizontal Vector
+A. Basic Valu
 
 B:
 From the following information, calculate 3
@@ -2300,6 +2394,26 @@ D. Assertion
 B:
 (A) < 5,000 (B) < 4,000
 (C) < 3,000 (D) < 2,000
+A. < 5,000
+B. < 4,000
+C. < 3,000
+D. < 2,000
+A. < 5,000
+B. < 4,000
+C. < 3,000
+D. < 2,000
+A. < 5,000
+B. < 4,000
+C. < 3,000
+D. < 2,000
+A. < 5,000
+B. < 4,000
+C. < 3,000
+D. < 2,000
+A. < 5,000
+B. < 4,000
+C. < 3,000
+D. < 2,000
 A. < 5,000
 B. < 4,000
 C. < 3,000
@@ -2460,23 +2574,6 @@ It was decided that :
 (ii) Goodwill of the firm was valued at < 2,00,000. Goodwill was not to
 appear in the books of the firm.
 Pass the ne
-
-## accountancy-2024-67-3-2-q29-29 + accountancy-2024-67-3-2-q31-31 (score 2)
-
-A:
-Statement I : result in inflow of cash. Statement II : In the context of the above two statements, choose the correct option:
-A. Legend
-B. Data point
-C. Axis title
-D. Plot area
-
-B:
-Classify the following items under major heads and sub-heads (if any) in
-the Balance Sheet of the company as per Schedule III, Part I of the
-Companies Act, 2013:
-(a) Loose Tools
-(b) Provision for Tax
-(c) Copyrights
 
 ## accountancy-2024-67-3-2-q31-31 + accountancy-2024-67-3-2-q32-32 (score 2)
 
@@ -2683,24 +2780,6 @@ On the above date, the firm was dissolved on the following terms :
 (ii) Trade Receivables were realised at book value.
 (iii) Investments were taken over by Flora at < 6,00,000.
 (iv) David took over 50% of the stock at < 1,80,000. The re
-
-## accountancy-2024-67-3-3-q30-30 + accountancy-2024-67-3-3-q32-32 (score 2)
-
-A:
-Statement I : Statement II : In the context of the above two statements, choose the correct option:
-A. Legend
-B. Data point
-C. Axis title
-D. Plot area
-
-B:
-From the following information, calculate : 3
-Particulars (<)
-Creditors 3,50,000
-Bills Payable 1,50,000
-10% Debentures 5,00,000
-Share Capital 12,00,000
-Reserves and Surplus 3,00,000
 
 ## accountancy-2025-26-sqp-q2-2 + accountancy-2025-26-sqp-q2-25 (score 3)
 
@@ -3327,6 +3406,12 @@ A. Function library
 B. Defined names
 C. Page layout
 D. Calculations
+A. Function library
+B. Defined names
+C. Page layout
+D. Calculations
+A. Function library
+B. Defined
 
 ## accountancy-2025-67-4-1-q28-38 + accountancy-2025-67-4-1-q29-32 (score 2)
 
@@ -3415,6 +3500,18 @@ A. Single value
 B. Store value
 C. Null value
 D. Multi value
+A. Single value
+B. Store value
+C. Null value
+D. Multi value
+A. Single value
+B. Store value
+C. Null value
+D. Multi value
+A. Single value
+B. Store value
+C. Null value
+D. Mult
 
 B:
 From the following information of KL Ltd., prepare a Common Size
@@ -3486,6 +3583,53 @@ A. 20,000
 B. 80,000
 C. 1,00,000
 D. 1,20,000 Notes to Accounts as at 31st March, 2024 31.03.2024 Note Particulars ( ) No.
+
+## accountancy-2025-67-4-2-q12-11 + accountancy-2025-67-4-2-q18-17 (score 2)
+
+A:
+(a) Tavish, Umesh and Varun were partners in a firm sharing profits
+and losses in the ratio of 4 : 3 : 2. Tavish retired. Umesh and Varun
+decided to share profits and losses in future in the ratio of 5 : 3.
+The gaining share of Umesh will be:
+(A) (B)
+(C) (D) (b) Asit, Sonu and Hina were partners in a firm sharing profits and
+losses in the ratio of 3 : 2 : 1. Asit retired and the balance in his
+capital account after making necessary adjustments on account of
+reserves and revaluation of assets and liabilities was 40,00,000.
+Sonu and Hina agreed to pay him 45,00,000 in full settlement of
+his claim. The value of goodwill of the firm was:
+(A) 5,00,000 (B) 20,00,000
+(C) 15,00,000 (D) 10,00,000
+A. 5,00,000
+C. 15,00,000
+B. 20,00,000
+D. 10,00,000
+A. 5,00,000
+C. 15,00,000
+B. 20,00,000
+D. 10,00,000
+A
+
+B:
+Sudhir and Balbir were partners in a firm sharing profits and losses in
+the ratio of 5 : 4. The following is the extract of their Balance Sheet as at
+31st March, 2024.
+st
+Balance Sheet of Sudhir and Balbir as at 31 March, 2024
+Amount Amount
+Liabilities Assets
+( ) ( )
+Investment Fluctuation Fund 15,00,000 Investments 75,00,000
+Workmen Compensation Fund 50,00,000
+On 1st April, 2024, Sushant was admitted as a new partner for th share
+in the profits of the firm on the following terms :
+(i) Market value of investments was 60,00,000.
+(ii) Claim on account of Workmen Compensation was estimated at
+41,00,000.
+Pass necessary journal entries for treatment of Investment Fluctuation
+Fund and Workmen Com
+admission. 3
+st
 
 ## accountancy-2025-67-4-2-q18-17 + accountancy-2025-67-4-2-q19-18 (score 2)
 
@@ -3680,6 +3824,53 @@ B:
 processed through the use of computers ? 4 (b) List eight uses of accounting softwares. 4
 34.
 numeric value ? How can you correct it ? 6
+
+## accountancy-2025-67-4-3-q11-10 + accountancy-2025-67-4-3-q23-22 (score 2)
+
+A:
+White, Shaun and Todd were partners in a firm sharing profits and losses equally. 1,00,000 to the firm. loan will be:
+A. (B)
+B. 14,40,000
+C. (D)
+D. 7,20,000
+
+B:
+: 2 -
+31 , 2024
+31 , 2024
+45,00,000
+5,00,000
+30,00,000
+20,00,000 35,00,000
+50,00,000
+8,00,000
+5,00,000
+2,00,000
+40,00,000
+95,00,000 95,00,000
+(i)
+(ii) 20%
+(iii)
+(iv) 50%
+(v) 2,00,000 Rishika and Shivika were partners in a firm sharing profits and losses in
+st
+the ratio of 3 : 2. Their Balance Sheet as at 31 March, 2024 stood as
+follows :
+st
+Balance Sheet of Rishika and Shivika as at 31 March, 2024
+Amount Amount
+Liabilities Assets
+( ) ( )
+Capitals : Equipment 45,00,000
+Rishika 30,00,000 Investments 5,00,000
+Shivika 20,00,000 50,00,000 Debtors 35,00,000
+5,00,000 Stock 8,00,000
+Creditors 40,00,000 Cash at Bank 2,00,000
+95,00,000 95,00,000
+The firm was dissolved on the above date and the following transactions
+took place :
+(i) Equipments were given to creditors in full settlement of their
+acco
 
 ## accountancy-2025-67-4-3-q23-22 + accountancy-2025-67-4-3-q24-25 (score 2)
 
@@ -4377,35 +4568,6 @@ B:
 (a) State the steps to prepare a chart. 4 (b) What is meant by internal margin while using MS Excel ? State
 the options available. 4
 
-## accountancy-2025-67-5-2-q7-7 + accountancy-2025-67-5-2-q13-13 (score 2)
-
-A:
-Manoj, Dilip and Rajinder were partners in a firm sharing profits and losses in the ratio of 7 : 3 : 5. Their fixed capitals were 10,00,000, 8,00,000 and 6,00,000, respectively. The partnership deed provided for i
-A. (B) Profit and Loss Appropriation Account
-C. Interest on Drawings Account
-D. Profit and Loss Account
-
-B:
-On dissolution of a firm, there was an unrecorded asset of 15,000 which
-was taken over by a partner at 13,000
-debited by:
-(A) 15,000 (B) 28,000
-(C) 2,000 (D) 13,000
-
-## accountancy-2025-67-5-2-q13-13 + accountancy-2025-67-5-2-q16-16 (score 2)
-
-A:
-On dissolution of a firm, there was an unrecorded asset of 15,000 which
-was taken over by a partner at 13,000
-debited by:
-(A) 15,000 (B) 28,000
-(C) 2,000 (D) 13,000
-
-B:
-Sona and Mona were partners in a firm sharing profits and losses in the ratio of 4 : 3. On 1st April, 2024, they admitted Leena as a new partner.
-A. Nil
-B. (C) (D)
-
 ## accountancy-2025-67-5-2-q23-23 + accountancy-2025-67-5-2-q23-24-or-b (score 3)
 
 A:
@@ -4564,7 +4726,21 @@ B:
 (C) 90,000 (D) 63,000
 (vi)
 (A) 9,63,000 (B) 98,73,000
-(C) 9,90,000 (D) 1,00,00,000
+(C) 9,90,000 (D) 1,00,00,000 (b) Which of the following transactions will not result in the inflow of
+cash ?
+(A) Cash deposited in the bank 80,000
+(B) Payment of salaries 50,000
+(C) Issue of 9% debentures 10,00,000
+(D) Purchase of machinery 2,00,000 (a)
+(A) Secret code (B) Mnemonic code
+(C) Sequential code (D) Block code
+B. Mnemonic code
+A. (A) Secret code
+C. Sequential code
+D. Block code
+B. Mnemonic code
+A. (A) Secret code
+C. Sequentia
 
 ## accountancy-2025-67-5-2-q26-29 + accountancy-2025-67-5-2-q32-36 (score 2)
 
@@ -4590,7 +4766,21 @@ A:
 (C) 90,000 (D) 63,000
 (vi)
 (A) 9,63,000 (B) 98,73,000
-(C) 9,90,000 (D) 1,00,00,000
+(C) 9,90,000 (D) 1,00,00,000 (b) Which of the following transactions will not result in the inflow of
+cash ?
+(A) Cash deposited in the bank 80,000
+(B) Payment of salaries 50,000
+(C) Issue of 9% debentures 10,00,000
+(D) Purchase of machinery 2,00,000 (a)
+(A) Secret code (B) Mnemonic code
+(C) Sequential code (D) Block code
+B. Mnemonic code
+A. (A) Secret code
+C. Sequential code
+D. Block code
+B. Mnemonic code
+A. (A) Secret code
+C. Sequentia
 
 B:
 From the following Balance Sheet of Vinayak Ltd., prepare a Comparative
@@ -5515,6 +5705,7 @@ A. Profit and Loss Account
 B. (C) Interest on Capital Account
 C. 800
 D. 1,600 OR
+A. P
 
 B:
 Ravi, Mohan and Vinod were partners in a firm sharing profits and losses
@@ -5953,29 +6144,42 @@ Less : Calls in Arrears (20,000) 80,000
 (B) 71,00,000
 (C) 80,00,0
 
-## accountancy-2025-67-6-3-q31-33 + accountancy-2025-67-6-3-q32-34 (score 2)
+## accountancy-2025-67-6-3-q25-26 + accountancy-2025-67-6-3-q26-28 (score 2)
 
 A:
-Show the following items under major heads and sub-heads (if any) in the
-Balance Sheet of the company as per Schedule III, Part I of the
-Companies Act, 2013:
-(a) Prepaid Insurance
-(b) Capital Work-in-Progress
-(c) Unpaid Dividend
+, 1 : 2 : 4 -
+31 , 2024
+(i) - 77,000
+(ii) 4,00,000 4,20,000
+(iii) 8,00,000 40,000
+90% 5,000 ,
+,
+(iv) 2,00,000 2,50,000
+2,20,000 10%
+(v) 50,000
+(vi) 42,000
+(vi)
+(A) 20,000
+(B) 80,000
+(C) 1,00,000
+(D) 71,00,000 Tushar, Mehta and Ghosh were partners in a firm sharing profits and
+losses in the ratio of 1 : 2 : 4. On 31st March, 2024 their firm was
+dissolved. After transferring sundry assets (other than cash in hand and
+cash at bank) and external liabilities to realisation account, the following
+transactions took place :
+(i) There was a debit balance of 77,000 in the profit and loss
+account, which was transferred to the capital accounts of the
+partners.
+(ii) The firm had investments of 4,00,000 whose market price was
+4,20,000. The investments were taken over by the partners in
+their profit shar
 
 B:
-Prepare a Common Size Statement of profit and loss of Laveena Ltd. for
-st st
-the year ended 31 March, 2023 and 31 March, 2024 from the
-following information : 3
-2023 24 2022 23
-Particulars
-( ) ( )
-Revenue from operations 80,00,000 40,00,000
-Purchase of stock in trade 8,00,000 4,00,000
-Other expenses 80,000 40,000
-Tax Rate 50% Which built-in function can be used to compute monthly instalments of
-repayment of loan ? State its parameters also. 3
+( ) 75 75,000 25 1,25,000 25,000 1,500 , , 2,000 , ( ) 80 80,000 1,40,000 20,000 1,200 , 2,400 , - - 6
+A. Both the Statements are true.
+B. Both the Statements are false.
+C. Statement I is true, Statement II is false.
+D. Statement II is true, Statement I is false.
 
 ## accountancy-2025-67-7-1-q1-1 + accountancy-2025-67-7-1-q2-2 (score 2)
 
@@ -6408,6 +6612,9 @@ A. data point
 B. data label
 C. data series
 D. data markers
+A. data point
+B. data label
+C. 
 
 ## accountancy-2025-67-7-1-q30-43 + accountancy-2025-67-7-1-q31-34 (score 2)
 
@@ -6483,25 +6690,22 @@ At the end of the year, Trade Receivables showed an increase of
 5,00,000 6
 II State the steps to import data from a text file. 6
 
-## accountancy-2025-67-7-2-q13-13 + accountancy-2025-67-7-2-q17-17 (score 2)
+## accountancy-2025-67-7-2-q13-13 + accountancy-2025-67-7-2-q21-21 (score 2)
 
 A:
 LN Ltd. forfeited 200 shares of 10 each. The amount forfeited was 1,400. What will be the maximum amount of discount per share at which these shares can be reissued ?
-A. 1
-B. 7
-C. 3
+A. (B)
+B. Akshay, Reet and Manya were partners in a firm sharing profits and losses in the ratio of 4 : 3 : 2. With effect from 1st April, 2024, they decided that in future, they will share the profits and losses in the ratio of 2 : 4 : 3. Identify the gain or sacrifice by the partners due to change in the profit sharing ratio from the following : 1
+C. (D)
 D. 4
 
 B:
-Piyush and Mita were partners in a firm sharing profits and losses in the
-ratio of 5 : 2. On 31st March, 2024, the firm was dissolved. After
-transferring various assets (other than cash) and third-party liabilities to
-Realisation Account, the following transactions took place.
-(i) Investments whose book value was 50,000 were realised at 70%.
-(ii) Unrecorded liabilities of 21,000 were paid.
-(iii) Piyush took over stock worth 78,000 at 65,000.
-Pass necessary journal entries for the above transactions in the books of
-Piyush and Mita. 3
+Pass necessary journal entries for the issue of debentures in the books of
+RN Ltd. for the following transactions : 4
+(i) Issued 1,000, 10% Debentures of 100 each at 5% premium,
+redeemable at a premium of 10% after 5 years.
+(ii) Issued 5,000, 10% Debentures of 100 each at a premium of 10%,
+redeemable at par after 5 years.
 
 ## accountancy-2025-67-7-2-q25-28 + accountancy-2025-67-7-2-q25-28-or-b (score 3)
 
@@ -6583,6 +6787,43 @@ M 2,00,000 Bank 70,000
 Creditors 1,50,000
 14
 
+## accountancy-2025-67-7-2-q26-29 + accountancy-2025-67-7-2-q28-42 (score 2)
+
+A:
+Neera Ltd. is registered with an authorised capital of 2,00,00,000 divided
+into equity shares of 10 each. The company invited applications for
+issuing 2,00,000 equity shares at a premium of 2 per share. Applications
+were received for 1,95,000 shares and allotment was made to all the
+applicants. All calls were made and duly received except the final call of
+2 per share on 5,000 shares. The company forfeited these shares.
+Answer the following questions :
+(i)
+(A) 19,50,000 (B) 19,40,000
+(C) 20,00,000 (D) 2,00,00,000
+(ii)
+(A) 19,00,000 (B) 19,40,000
+(C) 20,00,000 (D) Nil
+(iii)
+(A) 20,00,000 (B) 2,00,00,000
+(C) 19,50,000 (D) 19,40,000
+(iv)
+will be:
+(A) 20,00,000 (B) 9,50,000
+(C) 1,00,00,000 (D) 9,40,000
+(v)
+(A) 19,50,000 (B) 19,40,000
+(C) 19,00,000 (D) 1,90,000
+(vi)
+will be:
+(A) 10,000 (B) 40,0
+
+B:
+( ) ?
+A. Faster obsolescence.
+B. Economy in processing of accounting data.
+C. Data are prone to hacking.
+D. Data may be lost or corrupted due to power interruptions.
+
 ## accountancy-2025-67-7-2-q32-35 + accountancy-2025-67-7-2-q33-49 (score 2)
 
 A:
@@ -6623,9 +6864,9 @@ Total 50,00,000 20,00,000
 
 B:
 Hari, Chander, Prakash and Govind were partners in a firm sharing profits and losses in the ratio of 5 : 3 : 1 : 1. On 1stApril, 2024, Hari retired and his share was acquired equally by Chander, Prakash and Govind. The new profit sharing ratio of Chander, Prakash and Govind will be:
-A. 7 : 4 : 4
-B. 15 : 8 : 7
-C. 1 : 1 : 1
+A. (B)
+B. Akshay, Reet and Manya were partners in a firm sharing profits and losses in the ratio of 4 : 3 : 2. With effect from 1st April, 2024, they decided that in future, they will share the profits and losses in the ratio of 2 : 4 : 3. Identify the gain or sacrifice by the partners due to change in the profit sharing ratio from the following : 1
+C. (D)
 D. 16 : 7 : 7 Current Liabilities 4,00,000 2,00,000 Total 50,00,000 20,00,000 II Assets :
 
 ## accountancy-2025-67-7-3-q27-43 + accountancy-2025-67-7-3-q29-33 (score 2)

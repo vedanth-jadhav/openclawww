@@ -45,7 +45,7 @@ def rows(conn: sqlite3.Connection) -> list[dict]:
                    q.split_score, q.merged_into_id, o.paper_id, o.question_number
             FROM questions q
             LEFT JOIN question_occurrences o ON o.question_id = q.id
-            WHERE COALESCE(q.status, 'active') != 'duplicate'
+            WHERE COALESCE(q.status, 'active') = 'active'
             ORDER BY o.paper_id, CAST(o.question_number AS INTEGER), q.id
             """
         )

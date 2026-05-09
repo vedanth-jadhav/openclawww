@@ -328,7 +328,7 @@ function phase1(rows: Row[]) {
 }
 
 function dedupe(rows: Row[]) {
-  db.exec("UPDATE questions SET dupe_group = NULL, near_dupe_candidate = 0, cross_source_dupe = 0 WHERE status != 'page_split_merged'");
+  db.exec("UPDATE questions SET dupe_group = NULL, near_dupe_candidate = 0, cross_source_dupe = 0, canonical_question_id = NULL WHERE status != 'page_split_merged'");
   const groups = new Map<string, Row[]>();
   for (const row of rows) {
     const key = normalizeText(row.markdown);
@@ -336,6 +336,7 @@ function dedupe(rows: Row[]) {
     groups.set(key, [...(groups.get(key) ?? []), row]);
   }
   const log = [["id", "action", "reason"]];
+  const crossSourceRows = [["dupe_group", "canonical_id", "variant_id", "variant_status", "reason"]];
   const samples: string[] = [];
   let groupNo = 0;
   let sameSourceMarked = 0;
@@ -358,14 +359,15 @@ function dedupe(rows: Row[]) {
         log.push([row.id, "soft-delete", `same source exact duplicate in ${dupeGroup}`]);
         sameSourceMarked += 1;
       } else if (row.id !== canonical.id && sources.size > 1) {
-        db.prepare("UPDATE questions SET status = 'duplicate', cross_source_dupe = 1 WHERE id = ?").run(row.id);
-        log.push([row.id, "soft-delete", `cross source exact duplicate retained as flagged evidence in ${dupeGroup}`]);
+        db.prepare("UPDATE questions SET status = 'set_variant', cross_source_dupe = 1, canonical_question_id = ? WHERE id = ?").run(canonical.id, row.id);
+        log.push([row.id, "retain-as-set-variant", `cross source exact duplicate retained as flagged evidence in ${dupeGroup}`]);
+        crossSourceRows.push([dupeGroup, canonical.id, row.id, "set_variant", "cross-source duplicate kept with canonical link"]);
       }
       seenSource.add(source);
     }
     if (samples.length < 20) samples.push(`- ${dupeGroup}: ${group.map((row) => row.id).join(", ")} :: ${key.slice(0, 160)}`);
   }
-  const activeRows = allRows().filter((row) => row.status !== "duplicate" && row.status !== "page_split_merged");
+  const activeRows = allRows().filter((row) => String(row.status ?? "active") === "active");
   const byLength = activeRows.filter((row) => row.markdown.length > 40).slice(0, 500);
   let near = 0;
   for (let i = 0; i < byLength.length && near < 75; i += 1) {
@@ -382,9 +384,10 @@ function dedupe(rows: Row[]) {
     }
   }
   write("deduplication_log.csv", log.map((row) => row.map(csv).join(",")).join("\n"));
+  write("cross_source_duplicate_pairs.csv", crossSourceRows.map((row) => row.map(csv).join(",")).join("\n"));
   write(
     "deduplication_report.md",
-    [`# Deduplication Report`, "", `- Exact duplicate groups: ${groupNo}`, `- Same-source rows marked duplicate: ${sameSourceMarked}`, `- Cross-source duplicate rows flagged: ${crossSource}`, `- Near-duplicate candidate pairs sampled: ${near}`, "", "## Samples", ...samples].join("\n")
+    [`# Deduplication Report`, "", `- Exact duplicate groups: ${groupNo}`, `- Same-source rows marked duplicate: ${sameSourceMarked}`, `- Cross-source duplicate rows retained as set variants: ${crossSourceRows.length - 1}`, `- Cross-source duplicate rows flagged: ${crossSource}`, `- Near-duplicate candidate pairs sampled: ${near}`, `- Row-level cross-source evidence: audit/cross_source_duplicate_pairs.csv`, "", "## Samples", ...samples].join("\n")
   );
 }
 
@@ -549,6 +552,19 @@ function repairRows() {
     }
     if (type === "numerical_maths" && !renderHint) renderHint = "latex";
     if (type === "distinguish" && !renderHint) renderHint = "distinguish_table";
+    const optionLabelCount = (text.match(/(?:^|\s)(?:\([A-D]\)|[A-D][.)])\s+/g) ?? []).length;
+    if (!renderHint && optionLabelCount > 4 && !["cbq", "multi_part", "internal_choice_block"].includes(type)) {
+      renderHint = "option_block_needs_review";
+      humanReview.set(row.id, "More than one option block detected in a non-CBQ row.");
+    }
+    if (!renderHint && (marks ?? 0) <= 2 && /\(\s*i+\s*\).*\(\s*ii+\s*\)/is.test(text) && !["cbq", "multi_part", "internal_choice_block"].includes(type)) {
+      renderHint = "multi_part_needs_review";
+      humanReview.set(row.id, "Low-mark row contains multiple roman-numbered parts.");
+    }
+    if (!renderHint && (/(?:^|\n)\s*(?:st|nd|rd|th|ission|ent|ring|explai)\s*(?:\n|$)/i.test(text) || /\bratio\s+(?:st|nd|rd|th)\b/i.test(text) || /^\s*\(\s*\)\s*\d/.test(text))) {
+      renderHint = "text_fragment_needs_review";
+      humanReview.set(row.id, "Question text contains orphan OCR/PDF fragments.");
+    }
     if (type === "lpp" && (!marks || marks < 5)) marks = 5;
     if (type === "cbq" && !row.parent_question_id) humanReview.set(row.id, "CBQ structure detected; sub-question linkage may need human validation.");
     if (/^\s*OR\s*$/im.test(row.markdown)) orMissing.push([row.id, "stored as single row with OR boundary; split pass handles pair"]);
@@ -597,11 +613,26 @@ function repairRows() {
   write("ocr_results.csv", ocrRows.map((row) => row.map(csv).join(",")).join("\n"));
   write("marks_ambiguous.csv", marksAmbiguous.map((row) => row.map(csv).join(",")).join("\n"));
   write("or_missing_partner.csv", orMissing.map((row) => row.map(csv).join(",")).join("\n"));
+  const imageEvidence = [
+    ["id", "question_type", "has_image", "image_path", "exists_on_disk", "render_hint"],
+    ...allRows()
+      .filter((row) => ["graph_based", "diagram_mcq"].includes(String(row.question_type)))
+      .map((row) => {
+        const imagePath = row.image_path ? String(row.image_path) : "";
+        const diskPath = imagePath.startsWith("/") ? path.join("public", imagePath) : imagePath;
+        return [row.id, String(row.question_type), String(row.has_image ?? 0), imagePath, String(Boolean(imagePath && existsSync(diskPath))), String(row.render_hint ?? "")];
+      })
+  ];
+  write("graph_image_evidence.csv", imageEvidence.map((row) => row.map(csv).join(",")).join("\n"));
+  if (ocrRows.length === 1) {
+    ocrRows.push(["NO_CANDIDATES", "", "", "no short image-backed rows found in current database"]);
+    write("ocr_results.csv", ocrRows.map((row) => row.map(csv).join(",")).join("\n"));
+  }
 }
 
 function splitOrRows() {
   const columns = db.prepare("PRAGMA table_info(questions)").all().map((row) => (row as { name: string }).name);
-  const rows = allRows().filter((row) => row.status !== "duplicate" && row.status !== "page_split_merged");
+  const rows = allRows().filter((row) => String(row.status ?? "active") === "active");
   for (const row of rows) {
     if (row.or_pair_id || !/\n\s*(?:---\s*)?OR(?:\s*---)?\s*\n/i.test(row.markdown)) continue;
     const parts = row.markdown.split(/\n\s*(?:---\s*)?OR(?:\s*---)?\s*\n/i);
@@ -629,7 +660,7 @@ function pageSplitDetection() {
   const candidates = [["q_a_id", "q_b_id", "score", "auto_merged"]];
   const review = ["# Page Split Review", ""];
   let autoMerged = 0;
-  const rows = allRows().filter((row) => row.status !== "duplicate" && row.status !== "page_split_merged");
+  const rows = allRows().filter((row) => String(row.status ?? "active") === "active");
   for (let i = 0; i < rows.length - 1; i += 1) {
     const a = rows[i];
     const b = rows[i + 1];
@@ -659,6 +690,14 @@ function pageSplitDetection() {
   }
   write("page_split_candidates.csv", candidates.map((row) => row.map(csv).join(",")).join("\n"));
   write("page_split_review.md", review.join("\n"));
+  const merges = [
+    ["merged_row_id", "merged_into_id", "split_score"],
+    ...db.prepare("SELECT id, merged_into_id, split_score FROM questions WHERE status = 'page_split_merged' ORDER BY id").all().map((row) => {
+      const typed = row as { id: string; merged_into_id: string | null; split_score: number | null };
+      return [typed.id, typed.merged_into_id ?? "", String(typed.split_score ?? "")];
+    })
+  ];
+  write("page_split_merges.csv", merges.map((row) => row.map(csv).join(",")).join("\n"));
   write("page_split_verification.txt", `score_4_plus_unmerged=0\npage_split_candidates=${candidates.length - 1}\nauto_merged=${autoMerged}\n`);
 }
 
@@ -712,7 +751,7 @@ function refreshFts() {
      JOIN chapters c ON c.id = q.chapter_id
      JOIN subjects s ON s.id = q.subject_id
      LEFT JOIN topics t ON t.id = q.topic_id
-     WHERE COALESCE(q.status, 'active') NOT IN ('duplicate', 'page_split_merged')`
+     WHERE COALESCE(q.status, 'active') = 'active'`
   ).run();
 }
 
@@ -724,11 +763,11 @@ function gateResults(startTotal: number, classified: number) {
   const baseline = existsSync(baselinePath) ? JSON.parse(readFileSync(baselinePath, "utf-8")) as { totalQuestions: number } : null;
   const reportStartTotal = baseline?.totalQuestions ?? startTotal;
   const rows = allRows();
-  const active = rows.filter((row) => !["duplicate", "page_split_merged"].includes(String(row.status ?? "active")));
+  const active = rows.filter((row) => String(row.status ?? "active") === "active");
   const gates: Array<[string, number, string]> = [];
   const add = (name: string, count: number, passWhenZero = true) => gates.push([name, count, passWhenZero ? (count === 0 ? "PASS" : "FAIL") : "INFO"]);
-  add("Deduplication (same-source)", scalar(`SELECT COUNT(*) FROM questions WHERE COALESCE(status,'active') NOT IN ('duplicate','page_split_merged') AND lower(trim(markdown)) IN (SELECT lower(trim(markdown)) FROM questions WHERE COALESCE(status,'active') NOT IN ('duplicate','page_split_merged') GROUP BY lower(trim(markdown)) HAVING COUNT(*) > 1)`));
-  add("MCQ options", scalar(`SELECT COUNT(*) FROM questions WHERE question_type IN ('mcq','diagram_mcq','statement_based_mcq') AND (options IS NULL OR options = '' OR options = '{}') AND COALESCE(status,'active') NOT IN ('duplicate','page_split_merged')`));
+  add("Deduplication (same-source)", scalar(`SELECT COUNT(*) FROM questions WHERE COALESCE(status,'active') = 'active' AND lower(trim(markdown)) IN (SELECT lower(trim(markdown)) FROM questions WHERE COALESCE(status,'active') = 'active' GROUP BY lower(trim(markdown)) HAVING COUNT(*) > 1)`));
+  add("MCQ options", scalar(`SELECT COUNT(*) FROM questions WHERE question_type IN ('mcq','diagram_mcq','statement_based_mcq') AND (options IS NULL OR options = '' OR options = '{}') AND COALESCE(status,'active') = 'active'`));
   add("AR structure", scalar(`SELECT COUNT(*) FROM questions WHERE question_type = 'assertion_reason' AND json_extract(question_data, '$.assertion') IS NULL`));
   add("Statement 1/2 MCQ typed", scalar(`SELECT COUNT(*) FROM questions WHERE (markdown LIKE '%Statement 1:%' OR markdown LIKE '%Statement I:%') AND question_type NOT IN ('statement_based_mcq', 'assertion_reason')`));
   add("OR pairs", scalar(`SELECT COUNT(*) FROM questions WHERE or_position IS NOT NULL AND or_pair_id IS NULL`) + scalar(`SELECT COUNT(*) FROM (SELECT or_pair_id FROM questions WHERE or_position='A' EXCEPT SELECT or_pair_id FROM questions WHERE or_position='B')`));
@@ -767,13 +806,13 @@ function gateResults(startTotal: number, classified: number) {
   const unclassified = scalar<number>(`SELECT COUNT(*) FROM questions q JOIN chapters c ON c.id=q.chapter_id WHERE c.name='Needs classification'`);
   gates.push(["Classification", unclassified, unclassified <= startTotal * 0.2 ? "PASS" : "FAIL"]);
 
-  const pendingReview = humanReview.size + scalar<number>(`SELECT COUNT(*) FROM questions WHERE render_hint IS NOT NULL AND COALESCE(status,'active') NOT IN ('duplicate','page_split_merged')`);
+  const pendingReview = humanReview.size + scalar<number>(`SELECT COUNT(*) FROM questions WHERE render_hint IS NOT NULL AND COALESCE(status,'active') = 'active'`);
   write(
     "FINAL_REPORT.md",
     [
       "## Summary",
       `- Total questions at start: ${reportStartTotal}`,
-      `- Total questions after deduplication: ${scalar("SELECT COUNT(*) FROM questions WHERE status != 'duplicate'")}`,
+      `- Total canonical active questions after deduplication: ${scalar("SELECT COUNT(*) FROM questions WHERE status = 'active'")}`,
       `- Questions fixed (formatting): ${scalar("SELECT COUNT(*) FROM questions WHERE raw_text IS NOT NULL")}`,
       `- Questions fixed (marks): ${scalar("SELECT COUNT(*) FROM questions WHERE marks_source IS NOT NULL")}`,
       `- Questions auto-classified: ${classified}`,
@@ -821,7 +860,7 @@ function main() {
   const startTotal = startRows.length;
   phase1(startRows);
   db.transaction(() => {
-    db.exec("UPDATE questions SET raw_text = COALESCE(raw_text, markdown), status = COALESCE(status, 'active'), marks_display_position = 'right'");
+    db.exec("UPDATE questions SET raw_text = COALESCE(raw_text, markdown), status = CASE WHEN status = 'page_split_merged' THEN status ELSE 'active' END, marks_display_position = 'right'");
     dedupe(allRows());
     repairRows();
     splitOrRows();

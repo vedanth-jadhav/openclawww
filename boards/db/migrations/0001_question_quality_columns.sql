@@ -51,3 +51,17 @@ ALTER TABLE questions ADD COLUMN question_stem TEXT;
 ALTER TABLE questions ADD COLUMN subject_code TEXT;
 ALTER TABLE questions ADD COLUMN marking_criteria TEXT;
 ALTER TABLE questions ADD COLUMN word_limit_note TEXT;
+
+CREATE TRIGGER IF NOT EXISTS questions_or_position_check_insert
+BEFORE INSERT ON questions
+WHEN NEW.or_position IS NOT NULL AND NEW.or_position NOT IN ('A', 'B')
+BEGIN
+  SELECT RAISE(ABORT, 'invalid or_position');
+END;
+
+CREATE TRIGGER IF NOT EXISTS questions_or_position_check_update
+BEFORE UPDATE OF or_position ON questions
+WHEN NEW.or_position IS NOT NULL AND NEW.or_position NOT IN ('A', 'B')
+BEGIN
+  SELECT RAISE(ABORT, 'invalid or_position');
+END;

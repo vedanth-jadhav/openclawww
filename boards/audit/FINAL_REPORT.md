@@ -1,10 +1,10 @@
 ## Summary
 - Total questions at start: 1033
-- Total questions after deduplication: 912
+- Total canonical active questions after deduplication: 546
 - Questions fixed (formatting): 1349
 - Questions fixed (marks): 1349
 - Questions auto-classified: 1349
-- Questions pending human review: 1163 (list file: audit/human_review_queue.md)
+- Questions pending human review: 1248 (list file: audit/human_review_queue.md)
 
 ## Verification Gate Results
 | Gate | Status | Count |

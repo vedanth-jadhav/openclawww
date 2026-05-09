@@ -19,6 +19,13 @@ type Question = {
   repeatCount: number;
   firstYear: number | null;
   lastYear: number | null;
+  needsReview: number;
+  options: string | null;
+  renderHint: string | null;
+  questionData: string | null;
+  tableData: string | null;
+  imagePath: string | null;
+  imageAltText: string | null;
   officialSolution: string | null;
   aiSolution: string | null;
   occurrences: Array<{
@@ -178,7 +185,7 @@ function Dashboard({ trends }: { trends: Trends | null }) {
             {trends.topClusters.length === 0 && <p className="text-[13px] text-[#888888]">No repeats yet. Single-appearance questions are hidden here.</p>}
             {trends.topClusters.map((cluster) => (
               <div key={cluster.id} className="border-b border-[#EBEBEB] pb-3 last:border-0">
-                <div className="text-[13px] font-medium">{cluster.canonicalText}</div>
+                <div className="line-clamp-4 text-[13px] font-medium">{cluster.canonicalText}</div>
                 <div className="mt-1 text-[13px] text-[#888888]">
                   {cluster.repeatCount} times · {cluster.firstYear}-{cluster.lastYear} · {Math.round(cluster.confidence * 100)}% match
                 </div>
@@ -192,7 +199,7 @@ function Dashboard({ trends }: { trends: Trends | null }) {
         <div className="grid gap-3 md:grid-cols-6">
           {trends.marksBreakdown.map((row) => (
             <div key={row.marks} className="rounded-md border border-[#EBEBEB] p-3">
-              <div className="text-[13px] text-[#888888]">{row.marks} mark{row.marks === 1 ? "" : "s"}</div>
+              <div className="whitespace-nowrap text-[13px] text-[#888888]">{row.marks} mark{row.marks === 1 ? "" : "s"}</div>
               <div className="mt-1 text-[22px] font-semibold">{row.questions}</div>
             </div>
           ))}
@@ -257,9 +264,8 @@ function Browse({
             <option value="vi_alternative">VI alternative</option>
             <option value="numerical">Numerical</option>
             <option value="numerical_accountancy">Accountancy numerical</option>
-            <option value="short-answer">Short answer</option>
-            <option value="short_answer">Short answer tagged</option>
-            <option value="long-answer">Long answer</option>
+            <option value="short_answer">Short answer</option>
+            <option value="long_answer">Long answer</option>
           </Select>
           <Select value={marks} onChange={(event) => setMarks(event.target.value)}>
             <option value="all">All marks</option>
@@ -273,7 +279,11 @@ function Browse({
         </div>
       </Panel>
       <div className="space-y-3">
-        {questions.map((question) => <QuestionCard key={question.id} question={question} />)}
+        {questions.length === 0 ? (
+          <Panel className="p-6 text-[13px] text-[#888888]">
+            No matching questions. Clear the search or loosen the filters.
+          </Panel>
+        ) : questions.map((question) => <QuestionCard key={question.id} question={question} />)}
       </div>
     </div>
   );
@@ -332,7 +342,8 @@ function removeVisibleMarkSuffix(line: string) {
   return line.replace(/\s+([1-6])\s*$/, "").replace(/\s*:\s*$/, ":").trim();
 }
 
-function parseQuestionBlocks(text: string): QuestionBlock[] {
+function parseQuestionBlocks(text: string, structuredOptions: Array<{ label: string; text: string }> = []): QuestionBlock[] {
+  const skipParsedOptions = structuredOptions.length > 0;
   const expandedLines = text
     .split(/\n+/)
     .map((line, index) => cleanQuestionLine(line, index))
@@ -382,7 +393,7 @@ function parseQuestionBlocks(text: string): QuestionBlock[] {
     }
 
     const tableRow = tableRowFromLine(line);
-    if (tableRow) {
+    if (tableRow && tableRow.length > 0) {
       flushParagraph();
       flushOptions();
       tableRows.push(tableRow);
@@ -392,6 +403,7 @@ function parseQuestionBlocks(text: string): QuestionBlock[] {
 
     const option = optionFromLine(line);
     if (option) {
+      if (skipParsedOptions) continue;
       flushParagraph();
       flushTable();
       options.push(option);
@@ -409,11 +421,37 @@ function parseQuestionBlocks(text: string): QuestionBlock[] {
   flushParagraph();
   flushOptions();
   flushTable();
+  if (structuredOptions.length) blocks.push({ type: "options", options: structuredOptions });
   return blocks;
 }
 
-function QuestionText({ text, compact = false }: { text: string; compact?: boolean }) {
-  const blocks = parseQuestionBlocks(text);
+function structuredOptionsFromJson(value: string | null) {
+  if (!value) return [];
+  try {
+    const parsed = JSON.parse(value) as unknown;
+    if (Array.isArray(parsed)) {
+      return parsed
+        .map((item, index) => typeof item === "string"
+          ? { label: String.fromCharCode(65 + index), text: item }
+          : item && typeof item === "object" && "label" in item && "text" in item
+            ? { label: String((item as { label: unknown }).label), text: String((item as { text: unknown }).text) }
+            : null)
+        .filter((item): item is { label: string; text: string } => Boolean(item));
+    }
+    if (parsed && typeof parsed === "object") {
+      return Object.entries(parsed as Record<string, unknown>)
+        .filter(([, text]) => text !== null && text !== undefined && String(text).trim().length > 0)
+        .map(([label, text]) => ({ label, text: String(text).trim() }));
+    }
+  } catch {
+    return [];
+  }
+  return [];
+}
+
+function QuestionText({ text, compact = false, optionsJson = null }: { text: string; compact?: boolean; optionsJson?: string | null }) {
+  const structuredOptions = structuredOptionsFromJson(optionsJson);
+  const blocks = parseQuestionBlocks(text, structuredOptions);
   return (
     <div className={`question-markdown space-y-3 ${compact ? "text-[15px]" : "text-[15px]"}`}>
       {blocks.map((block, index) => {
@@ -480,8 +518,10 @@ function QuestionText({ text, compact = false }: { text: string; compact?: boole
   );
 }
 
-function getQuestionOptions(text: string) {
-  return parseQuestionBlocks(text).flatMap((block) => (block.type === "options" ? block.options : []));
+function getQuestionOptions(question: Question) {
+  const structuredOptions = structuredOptionsFromJson(question.options);
+  if (structuredOptions.length) return structuredOptions;
+  return parseQuestionBlocks(question.markdown).flatMap((block) => (block.type === "options" ? block.options : []));
 }
 
 function QuestionCard({ question }: { question: Question }) {
@@ -516,11 +556,12 @@ function QuestionCard({ question }: { question: Question }) {
         {question.topicName && <span>· {question.topicName}</span>}
         <span className="ml-auto rounded-md border border-[#EBEBEB] px-2 py-0.5">{question.marks} marks</span>
       </div>
-      <QuestionText text={question.markdown} />
+      <QuestionText text={question.markdown} optionsJson={question.options} />
       <div className="mt-4 flex flex-wrap gap-2 text-[13px]">
         <span className="rounded-md bg-[#F4F4F2] px-2 py-1">{question.repeatCount} appearances</span>
         <span className="rounded-md bg-[#F4F4F2] px-2 py-1">{question.marks} mark{question.marks === 1 ? "" : "s"}</span>
         <span className="rounded-md bg-[#F4F4F2] px-2 py-1">{question.questionType}</span>
+        {question.renderHint && <span className="rounded-md border border-[#F59E0B] bg-white px-2 py-1 text-[#92400E]">{question.renderHint}</span>}
         <span className="rounded-md bg-[#F4F4F2] px-2 py-1">{question.difficulty}</span>
       </div>
       <div className="mt-4 flex gap-2">
@@ -540,15 +581,15 @@ function QuestionCard({ question }: { question: Question }) {
             ))}
           </div>
           {question.officialSolution && (
-            <div className="whitespace-pre-wrap rounded-md bg-[#F4F4F2] p-3 text-[13px]">
+            <div className="rounded-md bg-[#F4F4F2] p-3 text-[13px]">
               <div className="mb-1 font-semibold">Official answer</div>
-              {question.officialSolution}
+              <QuestionText text={question.officialSolution} compact />
             </div>
           )}
           {aiSolution && (
-            <div className="rounded-md border border-[#F59E0B] bg-white p-3 text-[13px] whitespace-pre-wrap">
+            <div className="rounded-md border border-[#F59E0B] bg-white p-3 text-[13px]">
               <div className="mb-1 font-semibold">AI draft · verify before trusting</div>
-              {aiSolution}
+              <QuestionText text={aiSolution} compact />
             </div>
           )}
         </div>
@@ -661,11 +702,11 @@ function Practice({ questions }: { questions: Question[] }) {
         <span>{current.subjectName} · Q {index + 1} of {questions.length}</span>
         <span>{current.marks} mark</span>
       </div>
-      <QuestionText text={current.markdown} compact />
+      <QuestionText text={current.markdown} compact optionsJson={current.options} />
       <div className="space-y-2">
-        {(getQuestionOptions(current.markdown).slice(0, 4).length ? getQuestionOptions(current.markdown).slice(0, 4) : ["A", "B", "C", "D"].map((label) => ({ label, text: label }))).map((option) => (
+        {(getQuestionOptions(current).slice(0, 4).length ? getQuestionOptions(current).slice(0, 4) : ["A", "B", "C", "D"].map((label) => ({ label, text: label }))).map((option, optionIndex) => (
           <button
-            key={option.label}
+            key={`${current.id}-${optionIndex}-${option.label}`}
             onClick={() => setSelected(option.label)}
             className={`flex h-11 w-full items-center rounded-md border px-3 text-left text-[15px] transition-colors ${
               selected === option.label ? "border-[#5B5BD6] bg-[#F4F4FF]" : "border-[#EBEBEB] bg-white hover:bg-[#F4F4F2]"

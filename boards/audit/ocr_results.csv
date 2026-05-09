@@ -1,1 +1,2 @@
 id,image_path,ocr_confidence,action_taken
+NO_CANDIDATES,,,no short image-backed rows found in current database
